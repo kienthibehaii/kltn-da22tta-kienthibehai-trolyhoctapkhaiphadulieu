@@ -1,0 +1,484 @@
+{
+  "questions": [
+    {
+      "id": "lt25_001",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Trong khai phá dữ liệu, mục tiêu chính của quá trình KDD là gì?",
+      "options": {
+        "A": "Tìm ra tri thức hoặc mẫu có ích từ dữ liệu",
+        "B": "Chỉ lưu trữ dữ liệu trong cơ sở dữ liệu",
+        "C": "Chỉ sao lưu dữ liệu để tránh mất mát",
+        "D": "Chỉ thiết kế giao diện nhập liệu"
+      },
+      "correct_answer": "A",
+      "explanation": "KDD hướng tới khám phá tri thức có giá trị từ dữ liệu; khai phá dữ liệu là bước quan trọng trong quá trình đó.",
+      "source_reference": "Bài 1 - 01Intro.pptx"
+    },
+    {
+      "id": "lt25_002",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Ứng dụng nào sau đây là ví dụ phù hợp của khai phá mẫu thường xuyên?",
+      "options": {
+        "A": "Đổi màu giao diện người dùng",
+        "B": "Phân tích giỏ hàng để tìm các sản phẩm thường được mua cùng nhau",
+        "C": "Nén ảnh không mất dữ liệu",
+        "D": "Cấp quyền truy cập hệ điều hành"
+      },
+      "correct_answer": "B",
+      "explanation": "Frequent pattern analysis thường dùng trong basket data analysis để phát hiện các mặt hàng hay xuất hiện cùng nhau.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "lt25_003",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Thuộc tính nominal khác thuộc tính numeric ở điểm nào?",
+      "options": {
+        "A": "Numeric không bao giờ dùng trong khai phá dữ liệu",
+        "B": "Nominal luôn có thứ tự tuyệt đối",
+        "C": "Nominal biểu diễn nhãn/danh mục, còn numeric biểu diễn giá trị số có thể tính toán",
+        "D": "Nominal chỉ dùng cho dữ liệu ảnh"
+      },
+      "correct_answer": "C",
+      "explanation": "Trong phần tìm hiểu dữ liệu, thuộc tính nominal là kiểu danh mục, còn numeric là kiểu số dùng cho các phép đo và thống kê.",
+      "source_reference": "Bài 2 - 02Data.pptx"
+    },
+    {
+      "id": "lt25_004",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Vì sao cần tiền xử lý dữ liệu trước khi khai phá?",
+      "options": {
+        "A": "Vì mọi dữ liệu đều đã sạch sẵn",
+        "B": "Vì thuật toán chỉ chạy được khi dữ liệu bị trùng lặp",
+        "C": "Vì tiền xử lý làm mất toàn bộ thông tin gốc",
+        "D": "Vì dữ liệu thực tế có thể thiếu, nhiễu, không nhất quán hoặc khó diễn giải"
+      },
+      "correct_answer": "D",
+      "explanation": "Data preprocessing xử lý các vấn đề chất lượng dữ liệu như accuracy, completeness, consistency, timeliness, believability và interpretability.",
+      "source_reference": "Bài 2 - 03Preprocessing.pptx"
+    },
+    {
+      "id": "lt25_005",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Trong tiền xử lý dữ liệu, data cleaning thường nhằm xử lý vấn đề nào?",
+      "options": {
+        "A": "Giá trị thiếu, dữ liệu nhiễu và dữ liệu không nhất quán",
+        "B": "Tạo mật khẩu người dùng",
+        "C": "Vẽ logo cho hệ thống",
+        "D": "Tăng số lượng thuộc tính một cách ngẫu nhiên"
+      },
+      "correct_answer": "A",
+      "explanation": "Data cleaning là nhiệm vụ chính trong tiền xử lý, tập trung vào missing values, noisy data và inconsistencies.",
+      "source_reference": "Bài 2 - 03Preprocessing.pptx"
+    },
+    {
+      "id": "lt25_006",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Support của một tập mục trong khai phá luật kết hợp biểu diễn điều gì?",
+      "options": {
+        "A": "Số cụm cần tạo ra",
+        "B": "Tần suất hoặc tỷ lệ giao dịch chứa tập mục đó",
+        "C": "Độ sâu của cây quyết định",
+        "D": "Số lớp trong mạng nơ-ron"
+      },
+      "correct_answer": "B",
+      "explanation": "Support đo mức độ thường xuyên xuất hiện của itemset trong cơ sở dữ liệu giao dịch.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "lt25_007",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Nguyên lý Apriori được dùng để giảm không gian tìm kiếm như thế nào?",
+      "options": {
+        "A": "Nếu một thuộc tính là số thì không cần chuẩn hóa",
+        "B": "Nếu một điểm là nhiễu thì mọi điểm khác cũng là nhiễu",
+        "C": "Nếu một tập mục không phổ biến thì mọi siêu tập của nó cũng không phổ biến",
+        "D": "Nếu một mẫu phổ biến thì không cần tính support"
+      },
+      "correct_answer": "C",
+      "explanation": "Tính chất anti-monotone của Apriori cho phép cắt tỉa các siêu tập của itemset không phổ biến.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "lt25_008",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Ưu điểm nổi bật của FP-Growth so với Apriori là gì?",
+      "options": {
+        "A": "Luôn tạo ra cây quyết định",
+        "B": "Chỉ dùng được cho phân cụm dữ liệu",
+        "C": "Không cần đọc dữ liệu giao dịch",
+        "D": "Khai phá tập phổ biến mà không cần sinh nhiều tập ứng viên"
+      },
+      "correct_answer": "D",
+      "explanation": "FP-Growth dùng cấu trúc FP-tree để nén dữ liệu và tránh chi phí sinh ứng viên như Apriori.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "lt25_009",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Trong đánh giá luật kết hợp, confidence của luật X -> Y cho biết điều gì?",
+      "options": {
+        "A": "Trong các giao dịch chứa X, tỷ lệ giao dịch cũng chứa Y",
+        "B": "Khoảng cách giữa hai điểm dữ liệu",
+        "C": "Số chiều của data cube",
+        "D": "Số cụm tối ưu của K-Means"
+      },
+      "correct_answer": "A",
+      "explanation": "Confidence đo xác suất có Y khi X đã xuất hiện trong giao dịch.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "lt25_010",
+      "topic": "ly_thuyet_25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Trong tiền xử lý, data reduction được dùng với mục đích nào?",
+      "options": {
+        "A": "Xóa toàn bộ nhãn lớp",
+        "B": "Giảm kích thước dữ liệu nhưng vẫn giữ thông tin quan trọng cho phân tích",
+        "C": "Tạo thêm nhiễu vào dữ liệu",
+        "D": "Chuyển mọi giá trị thành văn bản ngẫu nhiên"
+      },
+      "correct_answer": "B",
+      "explanation": "Data reduction giúp thu gọn dữ liệu để khai phá hiệu quả hơn mà vẫn bảo toàn thông tin phân tích quan trọng.",
+      "source_reference": "Bài 2 - 03Preprocessing.pptx"
+    },
+    {
+      "id": "btl25_001",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Trong một bài tập lớn khai phá dữ liệu, bước nào nên thực hiện trước khi huấn luyện mô hình?",
+      "options": {
+        "A": "Chỉ ghi kết luận cuối cùng",
+        "B": "Bỏ qua dữ liệu đầu vào",
+        "C": "Tìm hiểu dữ liệu, làm sạch và tiền xử lý dữ liệu",
+        "D": "Chọn ngẫu nhiên đáp án"
+      },
+      "correct_answer": "C",
+      "explanation": "Phạm vi bài tập lớn bắt đầu từ Bài 2, trong đó tiền xử lý dữ liệu là nền tảng trước khi áp dụng thuật toán.",
+      "source_reference": "Bài 2 - 02Data.pptx; 03Preprocessing.pptx"
+    },
+    {
+      "id": "btl25_002",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Một data warehouse được mô tả tốt nhất như thế nào?",
+      "options": {
+        "A": "Một loại biểu đồ trang trí",
+        "B": "Một thuật toán phân lớp dựa trên láng giềng",
+        "C": "Một kỹ thuật phát hiện outlier duy nhất",
+        "D": "Kho dữ liệu hỗ trợ ra quyết định, tách biệt với cơ sở dữ liệu tác nghiệp"
+      },
+      "correct_answer": "D",
+      "explanation": "Data warehouse là cơ sở dữ liệu hỗ trợ quyết định, tích hợp dữ liệu lịch sử để phân tích.",
+      "source_reference": "Bài 2 - 04OLAP.pptx"
+    },
+    {
+      "id": "btl25_003",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Data cube chủ yếu hỗ trợ kiểu phân tích nào?",
+      "options": {
+        "A": "Phân tích đa chiều dữ liệu",
+        "B": "Chỉ phân cụm K-Means",
+        "C": "Chỉ phân loại văn bản",
+        "D": "Chỉ mã hóa mật khẩu"
+      },
+      "correct_answer": "A",
+      "explanation": "Data cube biểu diễn dữ liệu theo nhiều chiều, hỗ trợ OLAP và phân tích đa chiều.",
+      "source_reference": "Bài 2 - 05CubeTech.pptx"
+    },
+    {
+      "id": "btl25_004",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Trong bài toán phân lớp, supervised learning yêu cầu dữ liệu huấn luyện có đặc điểm gì?",
+      "options": {
+        "A": "Không bao giờ có nhãn",
+        "B": "Có nhãn lớp đi kèm các quan sát",
+        "C": "Chỉ gồm dữ liệu âm thanh",
+        "D": "Chỉ gồm dữ liệu bị thiếu"
+      },
+      "correct_answer": "B",
+      "explanation": "Classification là học có giám sát, trong đó training data đi kèm labels chỉ ra lớp của quan sát.",
+      "source_reference": "Bài 4 - 08ClassBasic.pptx"
+    },
+    {
+      "id": "btl25_005",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Trong cây quyết định, information gain thường được dùng để làm gì?",
+      "options": {
+        "A": "Nén FP-tree",
+        "B": "Xác định số cụm K",
+        "C": "Chọn thuộc tính phân chia tốt tại một nút",
+        "D": "Tạo data cube"
+      },
+      "correct_answer": "C",
+      "explanation": "Decision tree induction dùng các tiêu chí như information gain để chọn thuộc tính chia dữ liệu.",
+      "source_reference": "Bài 4 - 08ClassBasic.pptx"
+    },
+    {
+      "id": "btl25_006",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Naive Bayes dựa trên giả định chính nào?",
+      "options": {
+        "A": "Chỉ dùng cho dữ liệu không có nhãn",
+        "B": "Mọi điểm dữ liệu đều là centroid",
+        "C": "Không cần xác suất",
+        "D": "Các thuộc tính độc lập có điều kiện theo lớp"
+      },
+      "correct_answer": "D",
+      "explanation": "Naive Bayes giả định các thuộc tính độc lập có điều kiện khi biết lớp, giúp đơn giản hóa tính xác suất.",
+      "source_reference": "Bài 4 - 08ClassBasic.pptx"
+    },
+    {
+      "id": "btl25_007",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "K-Means hoạt động theo nguyên tắc cơ bản nào?",
+      "options": {
+        "A": "Gán điểm vào centroid gần nhất rồi cập nhật centroid lặp lại đến khi ổn định",
+        "B": "Sinh luật kết hợp từ support và confidence",
+        "C": "Tạo cây quyết định bằng entropy",
+        "D": "Xây dựng bảng xác suất có điều kiện"
+      },
+      "correct_answer": "A",
+      "explanation": "K-Means là phương pháp phân hoạch, lặp giữa bước gán điểm vào cụm gần nhất và cập nhật tâm cụm.",
+      "source_reference": "Bài 5 - 10ClusBasic.pptx; 11ClusAdvanced.pptx"
+    },
+    {
+      "id": "btl25_008",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "DBSCAN phù hợp hơn K-Means trong trường hợp nào?",
+      "options": {
+        "A": "Cần sinh tập ứng viên Apriori",
+        "B": "Dữ liệu có cụm hình dạng bất kỳ và có điểm nhiễu",
+        "C": "Cần xây dựng data warehouse",
+        "D": "Dữ liệu chỉ có một thuộc tính nominal"
+      },
+      "correct_answer": "B",
+      "explanation": "DBSCAN là phương pháp phân cụm dựa trên mật độ, có khả năng phát hiện cụm hình dạng bất kỳ và đánh dấu noise.",
+      "source_reference": "Bài 5 - 10ClusBasic.pptx"
+    },
+    {
+      "id": "btl25_009",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Trong bài tập lớn dùng luật kết hợp, vì sao cần đặt ngưỡng minimum support?",
+      "options": {
+        "A": "Để xác định nhãn lớp",
+        "B": "Để chọn số cụm K",
+        "C": "Để chỉ giữ các tập mục xuất hiện đủ thường xuyên",
+        "D": "Để chuẩn hóa mọi thuộc tính về chuỗi"
+      },
+      "correct_answer": "C",
+      "explanation": "Minimum support giúp lọc các itemset không đủ phổ biến trong frequent itemset mining.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "btl25_010",
+      "topic": "bai_tap_lon_25",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Trong đánh giá phân cụm, mục tiêu chung là gì?",
+      "options": {
+        "A": "Chỉ cần tăng số cụm càng nhiều càng tốt",
+        "B": "Mọi đối tượng bắt buộc nằm trong một cụm duy nhất tên là A",
+        "C": "Không cần đo độ tương tự",
+        "D": "Các đối tượng trong cùng cụm tương tự nhau, còn giữa các cụm thì khác nhau"
+      },
+      "correct_answer": "D",
+      "explanation": "Cluster analysis nhóm các đối tượng sao cho similarity cao trong cụm và thấp giữa các cụm.",
+      "source_reference": "Bài 5 - 10ClusBasic.pptx"
+    },
+    {
+      "id": "ck50_001",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Khái niệm nào mô tả đúng nhất về clustering?",
+      "options": {
+        "A": "Nhóm các đối tượng tương tự nhau vào cùng cụm khi không có nhãn lớp trước",
+        "B": "Dự đoán nhãn lớp từ dữ liệu đã gán nhãn",
+        "C": "Tạo luật X -> Y từ giao dịch",
+        "D": "Chỉ lưu trữ dữ liệu lịch sử"
+      },
+      "correct_answer": "A",
+      "explanation": "Clustering là học không giám sát, tìm nhóm dữ liệu dựa trên độ tương tự mà không có predefined classes.",
+      "source_reference": "Bài 5 - 10ClusBasic.pptx"
+    },
+    {
+      "id": "ck50_002",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "easy",
+      "question": "Classification khác clustering ở điểm nào?",
+      "options": {
+        "A": "Classification không cần dữ liệu",
+        "B": "Classification dùng dữ liệu có nhãn, clustering thường không có nhãn",
+        "C": "Clustering luôn dùng cây quyết định",
+        "D": "Hai khái niệm hoàn toàn giống nhau"
+      },
+      "correct_answer": "B",
+      "explanation": "Classification là supervised learning, còn clustering là unsupervised learning.",
+      "source_reference": "Bài 4 - 08ClassBasic.pptx; Bài 5 - 10ClusBasic.pptx"
+    },
+    {
+      "id": "ck50_003",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Một luật kết hợp dạng X -> Y thường được đánh giá bằng nhóm chỉ số nào?",
+      "options": {
+        "A": "Entropy, Gini và tree depth duy nhất",
+        "B": "Centroid, radius và epsilon",
+        "C": "Support, confidence và lift/correlation",
+        "D": "Timeliness, believability và font size"
+      },
+      "correct_answer": "C",
+      "explanation": "Frequent pattern và association rule mining dùng các độ đo như support, confidence và lift/correlation để đánh giá mẫu.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "ck50_004",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Trong OLAP, thao tác phân tích đa chiều thường dựa trên cấu trúc nào?",
+      "options": {
+        "A": "Một centroid",
+        "B": "FP-tree duy nhất",
+        "C": "Confusion matrix",
+        "D": "Data cube"
+      },
+      "correct_answer": "D",
+      "explanation": "Data cube là nền tảng cho phân tích đa chiều trong OLAP và data warehouse.",
+      "source_reference": "Bài 2 - 04OLAP.pptx; 05CubeTech.pptx"
+    },
+    {
+      "id": "ck50_005",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Một mẫu được gọi là frequent pattern khi nào?",
+      "options": {
+        "A": "Khi nó xuất hiện thường xuyên trong tập dữ liệu",
+        "B": "Khi nó là nhãn lớp hiếm nhất",
+        "C": "Khi nó nằm ngoài mọi cụm",
+        "D": "Khi nó là dữ liệu nhiễu"
+      },
+      "correct_answer": "A",
+      "explanation": "Frequent pattern là mẫu như itemset, subsequence hoặc substructure xuất hiện thường xuyên trong dữ liệu.",
+      "source_reference": "Bài 3 - 06FPBasic.pptx"
+    },
+    {
+      "id": "ck50_006",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Khi dữ liệu có nhiều giá trị thiếu và nhiễu, nhóm kỹ thuật nào nên được ưu tiên trước?",
+      "options": {
+        "A": "Tăng số cụm K ngẫu nhiên",
+        "B": "Data cleaning trong tiền xử lý dữ liệu",
+        "C": "Bỏ qua toàn bộ dữ liệu",
+        "D": "Chỉ tính confidence của luật kết hợp"
+      },
+      "correct_answer": "B",
+      "explanation": "Data cleaning xử lý missing values, noisy data và inconsistency trước khi khai phá.",
+      "source_reference": "Bài 2 - 03Preprocessing.pptx"
+    },
+    {
+      "id": "ck50_007",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Một điểm trong DBSCAN được xem là core point khi nào?",
+      "options": {
+        "A": "Khi nó không có điểm lân cận nào",
+        "B": "Khi nó là điểm xa nhất mọi centroid",
+        "C": "Khi vùng lân cận bán kính Eps quanh nó có ít nhất MinPts điểm",
+        "D": "Khi nó là thuộc tính nominal"
+      },
+      "correct_answer": "C",
+      "explanation": "Core point là điểm có mật độ lân cận đủ lớn theo hai tham số Eps và MinPts.",
+      "source_reference": "Bài 5 - 10ClusBasic.pptx"
+    },
+    {
+      "id": "ck50_008",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "medium",
+      "question": "Lazy learners trong phân lớp thường gắn với phương pháp nào?",
+      "options": {
+        "A": "OLAP roll-up",
+        "B": "Data cube computation",
+        "C": "FP-tree compression",
+        "D": "K-nearest neighbors"
+      },
+      "correct_answer": "D",
+      "explanation": "Trong các phương pháp phân lớp nâng cao, lazy learners còn được mô tả là learning from your neighbors, tiêu biểu là KNN.",
+      "source_reference": "Bài 4 - 09ClassAdvanced.pptx"
+    },
+    {
+      "id": "ck50_009",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Trong classification, model evaluation thường dùng để làm gì?",
+      "options": {
+        "A": "Đánh giá và lựa chọn mô hình phân lớp dựa trên hiệu quả dự đoán",
+        "B": "Tạo data warehouse",
+        "C": "Tính support cho itemset",
+        "D": "Chỉ đổi tên thuộc tính"
+      },
+      "correct_answer": "A",
+      "explanation": "Chương phân lớp có nội dung model evaluation and selection để đánh giá và chọn mô hình.",
+      "source_reference": "Bài 4 - 08ClassBasic.pptx"
+    },
+    {
+      "id": "ck50_010",
+      "topic": "cuoi_ky_50",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Nếu bài toán yêu cầu phát hiện nhóm khách hàng tương tự mà chưa có nhãn sẵn, kỹ thuật nào phù hợp nhất?",
+      "options": {
+        "A": "Supervised classification",
+        "B": "Clustering",
+        "C": "Rule-based access control",
+        "D": "Data backup"
+      },
+      "correct_answer": "B",
+      "explanation": "Khi chưa có nhãn lớp, clustering là hướng phù hợp để nhóm các đối tượng tương tự nhau.",
+      "source_reference": "Bài 5 - 10ClusBasic.pptx"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Implements academic-aware document chunking, cross-encoder retrieval reranking, and local citation verification with confidence scoring.

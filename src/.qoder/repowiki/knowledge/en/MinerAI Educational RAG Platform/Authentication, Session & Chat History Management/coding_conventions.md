@@ -1,0 +1,4 @@
+- Global singleton instances (`auth_manager`, `chat_history_manager`) are created at module load time and reused across routes.
+- Protected endpoints consistently use `current_user: dict = Depends(get_current_user)` to enforce JWT authentication.
+- Service methods return structured dicts with a `success` boolean and a `message` field; route handlers translate failures into `HTTPException`.
+- Ownership checks compare `conversation['user_id']` with `current_user['user_id']` before allowing chat history mutations or reads.

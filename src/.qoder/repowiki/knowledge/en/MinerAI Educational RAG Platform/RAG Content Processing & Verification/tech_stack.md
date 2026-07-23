@@ -1,0 +1,1 @@
+Uses `sentence_transformers.CrossEncoder` for semantic reranking and `langchain_core.documents.Document` for internal data representation.

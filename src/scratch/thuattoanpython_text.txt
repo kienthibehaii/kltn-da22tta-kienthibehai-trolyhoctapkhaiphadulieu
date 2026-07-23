@@ -1,0 +1,425 @@
+**✅ ĐÃ SẮP XẾP LẠI CÓ CẤU TRÚC, SẠCH SẼ VÀ MẠCH LẠC**
+
+### I. TỪ VIẾT TẮT VÀ THUẬT NGỮ
+
+| **Viết tắt** | **Tiếng Anh** | **Dịch nghĩa** |
+|--------------|---------------|----------------|
+| KDD | Knowledge discovery in databases | Khám phá tri thức trong cơ sở dữ liệu |
+| Classification | Classification | Phân lớp (học có giám sát) |
+| Clustering | Clustering | Gom cụm, gom nhóm (học không giám sát) |
+| DM | Data mining | Khai thác dữ liệu |
+| Ensemble-based method | Ensemble-based method | Phương pháp tập hợp mô hình |
+| Feature space | Feature space | Không gian đặc trưng |
+| Gini index | Gini index | Chỉ số Gini |
+| Hierarchical clustering | Hierarchical clustering | Gom cụm phân cấp |
+| Hyperplane | Hyperplane | Siêu phẳng |
+| Impurity | Impurity | Độ hỗn loạn |
+| Information gain | Information gain | Độ lợi thông tin |
+| Information visualization | Information visualization | Hiển thị thông tin dữ liệu |
+| Kernel | Kernel | Hàm nhân |
+| kNN | k nearest neighbors | k láng giềng gần nhất |
+| Laplace estimator | Laplace estimator | Ước lượng Laplace |
+| Machine learning | Machine learning | Máy học |
+| MDS | Multidimensional scaling | Phương pháp giảm chiều MDS |
+| Naive Bayes | Naive Bayes | Bayes thơ ngây |
+| Overfitting | Overfitting | Học vẹt (quá khớp) |
+| PCA | Principal component analysis | Phân tích thành phần chính |
+| Random forest | Random forest | Rừng ngẫu nhiên |
+| Regression | Regression | Hồi quy |
+| Stress function | Stress function | Hàm độ đo biến dạng |
+| Supervised learning | Supervised learning | Học có giám sát |
+| SVM | Support vector machines | Máy vectơ hỗ trợ |
+| Underfitting | Underfitting | Học không đủ (không khớp) |
+| Unsupervised learning | Unsupervised learning | Học không giám sát |
+
+---
+
+### II. CÁC VÍ DỤ CODE PYTHON
+
+#### **Bảng 2.2** – Thuật toán **k láng giềng (kNN)**
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+
+# Nạp dữ liệu Iris
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Chia train/test
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+# Xây dựng mô hình kNN
+knn = KNeighborsClassifier(n_neighbors=3, metric='minkowski', p=2)
+knn.fit(X_train, y_train)
+pred = knn.predict(X_test)
+
+# Đánh giá
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 3.1** – Thuật toán **Naive Bayes (GaussianNB)**
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+gnb = GaussianNB()
+gnb.fit(X_train, y_train)
+pred = gnb.predict(X_test)
+
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 4.1** – Thuật toán **Cây quyết định (Decision Tree)**
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+from sklearn import tree
+import matplotlib.pyplot as plt
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+dtree = DecisionTreeClassifier(criterion='entropy', min_samples_split=2)
+dtree.fit(X_train, y_train)
+pred = dtree.predict(X_test)
+
+# Vẽ cây
+fig = tree.plot_tree(dtree, feature_names=iris.feature_names, 
+                     class_names=iris.target_names, filled=True)
+plt.show()
+
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 5.1** – **Bagging** (Cây quyết định)
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import BaggingClassifier
+from sklearn.metrics import accuracy_score
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+dtree = DecisionTreeClassifier(criterion='entropy', min_samples_split=2)
+bagtree = BaggingClassifier(base_estimator=dtree, n_estimators=50, 
+                            bootstrap=True, random_state=1234)
+bagtree.fit(X_train, y_train)
+pred = bagtree.predict(X_test)
+
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 5.2** – **Boosting** (AdaBoost)
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.metrics import accuracy_score
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+dtree = DecisionTreeClassifier(criterion='entropy', max_depth=3)
+boosttree = AdaBoostClassifier(base_estimator=dtree, n_estimators=50, random_state=1234)
+boosttree.fit(X_train, y_train)
+pred = boosttree.predict(X_test)
+
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 5.3** – **Random Forest**
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+rf = RandomForestClassifier(n_estimators=50, criterion='gini', 
+                            max_features=3, random_state=1234)
+rf.fit(X_train, y_train)
+pred = rf.predict(X_test)
+
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 6.1** – **Support Vector Machine (SVM)**
+
+```python
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=1234)
+
+svm = SVC(C=1000, kernel='rbf', gamma=0.0001)
+svm.fit(X_train, y_train)
+pred = svm.predict(X_test)
+
+acc = accuracy_score(y_test, pred)
+print(acc)
+```
+
+#### **Bảng 7.2** – Gom cụm phân cấp (Hierarchical Clustering)
+
+```python
+from sklearn import datasets
+from sklearn.cluster import AgglomerativeClustering
+import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import dendrogram
+from scipy.cluster import hierarchy
+
+iris = datasets.load_iris()
+X = iris.data
+
+model = AgglomerativeClustering(distance_threshold=0, n_clusters=None)
+model.fit(X)
+
+z = hierarchy.linkage(model.children_, 'ward')
+plt.title('Hierarchical Clustering Dendrogram')
+dn = hierarchy.dendrogram(z)
+plt.show()
+```
+
+#### **Bảng 7.3** – **K-Means Clustering**
+
+```python
+from sklearn import datasets
+from sklearn.cluster import KMeans
+import pandas as pd
+from pandas.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+
+iris = datasets.load_iris()
+X = iris.data
+
+kmeans = KMeans(n_clusters=3, max_iter=50, random_state=1234)
+kmeans.fit(X)
+
+df = pd.DataFrame(X, columns=iris.feature_names)
+colMap = {0: 'red', 1: 'blue', 2: 'green'}
+colors = list(map(lambda x: colMap.get(x), kmeans.labels_))
+scatter_matrix(df, diagonal='hist', c=colors)
+plt.show()
+```
+
+#### **Bảng 8.1** – Thuật toán **Apriori** (Association Rules)
+
+```python
+import pandas as pd
+from mlxtend.frequent_patterns import apriori, association_rules
+from mlxtend.preprocessing import TransactionEncoder
+
+dataset = [
+    ['Milk', 'Onion', 'Nutmeg', 'Kidney Beans', 'Eggs', 'Yogurt'],
+    ['Dill', 'Onion', 'Nutmeg', 'Kidney Beans', 'Eggs', 'Yogurt'],
+    ['Milk', 'Apple', 'Kidney Beans', 'Eggs'],
+    ['Milk', 'Unicorn', 'Corn', 'Kidney Beans', 'Yogurt'],
+    ['Corn', 'Onion', 'Onion', 'Kidney Beans', 'Ice cream', 'Eggs']
+]
+
+te = TransactionEncoder()
+te_ary = te.fit(dataset).transform(dataset)
+df = pd.DataFrame(te_ary, columns=te.columns_)
+
+frequent_itemsets = apriori(df, min_support=0.6, use_colnames=True)
+rules = association_rules(frequent_itemsets, metric="lift", min_threshold=0.7)
+rules = rules.sort_values(['confidence', 'lift'], ascending=[False, False])
+print(rules.iloc[:, [0,1,2,5,6]])
+```
+
+#### **Bảng 9.1** – Histogram và Boxplot
+
+```python
+from sklearn import datasets
+import matplotlib.pyplot as plt
+
+# Nạp dữ liệu Iris
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Tạo 2 subplot
+fig, (plt1, plt2) = plt.subplots(1, 2, figsize=(12, 5))
+
+# Histogram
+plt1.hist(X[:, 2], ec='white')
+plt1.set_title('Petal Length')
+plt1.set_ylabel('Density')
+
+# Boxplot
+plt2.boxplot(X[:, 2])
+plt2.set_title('Petal Length')
+
+plt.show()
+```
+
+---
+
+#### **Bảng 9.2** – Ma trận Scatter Plot
+
+```python
+from sklearn import datasets
+import matplotlib.pyplot as plt
+import pandas as pd
+from pandas.plotting import scatter_matrix
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Tạo DataFrame
+df = pd.DataFrame(X, columns=iris.feature_names)
+
+# Vẽ ma trận scatter
+colMap = {0: 'red', 1: 'blue', 2: 'green'}
+colors = list(map(lambda x: colMap.get(x), y))
+
+scatter_matrix(df, diagonal='hist', c=colors, figsize=(10, 10))
+plt.show()
+```
+
+---
+
+#### **Bảng 9.3** – Biểu đồ Tọa độ Song song (Parallel Coordinates)
+
+```python
+from sklearn import datasets
+import matplotlib.pyplot as plt
+import pandas as pd
+from pandas.plotting import parallel_coordinates
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Tạo DataFrame
+df = pd.DataFrame(X, columns=iris.feature_names)
+df['label'] = y
+
+# Vẽ biểu đồ tọa độ song song
+parallel_coordinates(df, 'label', color=('red', 'blue', 'green'))
+plt.title('Parallel Coordinates of IRIS Dataset')
+plt.show()
+```
+
+---
+
+#### **Bảng 9.4** – Kết hợp nhiều biểu đồ (2x2)
+
+```python
+from sklearn import datasets, linear_model
+import matplotlib.pyplot as plt
+import pandas as pd
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Tạo khung 2x2
+fig, plts = plt.subplots(2, 2, figsize=(14, 10))
+
+# 1. Histogram
+plts[0, 0].hist(X[:, 2], ec='white')
+plts[0, 0].set_title('Petal Length')
+plts[0, 0].set_ylabel('Density')
+
+# 2. Boxplot
+plts[0, 1].boxplot(X[:, 2])
+plts[0, 1].set_title('Petal Length')
+
+# 3. Regression (Petal Length vs Width)
+regr = linear_model.LinearRegression()
+regr.fit(X[:, 2].reshape(-1, 1), X[:, 3])
+plts[1, 0].scatter(X[:, 2], X[:, 3])
+plts[1, 0].plot(X[:, 2], regr.predict(X[:, 2].reshape(-1, 1)), color='red')
+plts[1, 0].set_title('Petal Length vs Width')
+plts[1, 0].set_xlabel('Petal Length')
+plts[1, 0].set_ylabel('Petal Width')
+
+# 4. Pie chart
+labels = iris.target_names
+sizes = [sum(y == 0), sum(y == 1), sum(y == 2)]
+plts[1, 1].pie(sizes, labels=labels, colors=['red', 'blue', 'lightgreen'], autopct='%1.1f%%')
+plts[1, 1].set_title('Distribution of IRIS Species')
+
+plt.tight_layout()
+plt.show()
+```
+
+---
+
+#### **Bảng 9.5** – Phân tích thành phần chính (PCA)
+
+```python
+from sklearn import datasets
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Giảm chiều từ 4 → 2
+pca = PCA(n_components=2)
+pr = pca.fit_transform(X)
+
+# Vẽ biểu đồ
+colMap = {0: 'red', 1: 'blue', 2: 'green'}
+colors = list(map(lambda x: colMap.get(x), y))
+
+plt.figure(figsize=(8, 6))
+plt.scatter(pr[:, 0], pr[:, 1], color=colors)
+plt.title('PCA plot of IRIS Dataset')
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.grid(True)
+plt.show()
+```

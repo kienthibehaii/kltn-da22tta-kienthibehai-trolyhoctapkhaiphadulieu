@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q1",
+    "query": "What is data mining?",
+    "reference_answer": "Data mining is the process of discovering patterns, correlations, and anomalies in large datasets using machine learning, statistics, and database systems to extract useful information and knowledge.",
+    "relevant_docs": ["doc1", "doc2", "doc5"],
+    "relevance_scores": {
+      "doc1": 1.0,
+      "doc2": 0.9,
+      "doc5": 0.7
+    },
+    "sources": {
+      "doc1": "Data mining is the process of discovering patterns in large datasets. It involves methods at the intersection of machine learning, statistics, and database systems.",
+      "doc2": "The goal of data mining is to extract useful information from data and transform it into an understandable structure for further use.",
+      "doc5": "Data mining techniques include classification, clustering, regression, and association rule mining."
+    }
+  },
+  {
+    "id": "q2",
+    "query": "What are the main tasks in data mining?",
+    "reference_answer": "The main tasks in data mining include classification (predicting categorical labels), clustering (grouping similar items), regression (predicting numerical values), association rule mining (finding relationships), and anomaly detection (identifying outliers).",
+    "relevant_docs": ["doc3", "doc4", "doc6"],
+    "relevance_scores": {
+      "doc3": 1.0,
+      "doc4": 0.95,
+      "doc6": 0.8
+    },
+    "sources": {
+      "doc3": "Data mining tasks include classification, clustering, regression, association rule mining, and anomaly detection.",
+      "doc4": "Classification predicts categorical labels, while regression predicts numerical values. Clustering groups similar data points together.",
+      "doc6": "Association rule mining discovers interesting relationships between variables in large databases."
+    }
+  },
+  {
+    "id": "q3",
+    "query": "How does classification work in data mining?",
+    "reference_answer": "Classification is a supervised learning task that predicts categorical labels for new data points based on training data. It uses algorithms like decision trees, naive Bayes, support vector machines, and neural networks to learn patterns from labeled examples.",
+    "relevant_docs": ["doc7", "doc8", "doc9"],
+    "relevance_scores": {
+      "doc7": 1.0,
+      "doc8": 0.9,
+      "doc9": 0.85
+    },
+    "sources": {
+      "doc7": "Classification is a supervised learning task that predicts categorical labels for new data points based on training data.",
+      "doc8": "Common classification algorithms include decision trees, naive Bayes, support vector machines, k-nearest neighbors, and neural networks.",
+      "doc9": "The classification process involves training a model on labeled data and then using it to predict labels for new, unseen data."
+    }
+  },
+  {
+    "id": "q4",
+    "query": "What is clustering and how is it different from classification?",
+    "reference_answer": "Clustering is an unsupervised learning task that groups similar data points together without predefined labels. Unlike classification which requires labeled training data, clustering discovers natural groupings in data automatically using similarity measures like distance metrics.",
+    "relevant_docs": ["doc10", "doc11", "doc12"],
+    "relevance_scores": {
+      "doc10": 1.0,
+      "doc11": 0.95,
+      "doc12": 0.8
+    },
+    "sources": {
+      "doc10": "Clustering is an unsupervised learning task that groups similar data points together without predefined labels or categories.",
+      "doc11": "Unlike classification which is supervised, clustering does not require labeled training data. It discovers patterns automatically.",
+      "doc12": "Common clustering algorithms include k-means, hierarchical clustering, DBSCAN, and Gaussian mixture models."
+    }
+  },
+  {
+    "id": "q5",
+    "query": "What is association rule mining?",
+    "reference_answer": "Association rule mining discovers interesting relationships and patterns between variables in large databases. It finds rules like 'if A then B' with measures of support (frequency) and confidence (reliability), commonly used in market basket analysis.",
+    "relevant_docs": ["doc13", "doc14", "doc15"],
+    "relevance_scores": {
+      "doc13": 1.0,
+      "doc14": 0.9,
+      "doc15": 0.85
+    },
+    "sources": {
+      "doc13": "Association rule mining discovers interesting relationships between variables in large databases, finding patterns like 'if A then B'.",
+      "doc14": "Association rules are measured by support (how frequently items appear together) and confidence (how often the rule is true).",
+      "doc15": "A classic application is market basket analysis, which finds products frequently purchased together."
+    }
+  }
+]

@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: educational_engine
+title: Adaptive Educational Response Synthesis Engine
+scope:
+    - educational_engine/
+source_files: []
+depends_on: []
+related_to:
+    - path: advanced_rag

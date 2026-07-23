@@ -1,0 +1,3 @@
+- **LLM Integration**: Uses `langchain_google_genai` with `gemini-flash-latest` for response synthesis and visual generation.
+- **Persistence**: Relies on `pymongo` for user learning profiles and interaction history, and `redis` for high-performance response caching.
+- **Configuration**: Manages environment variables via `python-dotenv`.

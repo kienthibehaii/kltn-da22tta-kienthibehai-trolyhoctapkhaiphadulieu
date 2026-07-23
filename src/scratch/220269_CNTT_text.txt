@@ -1,0 +1,200 @@
+PHỤ LỤC F 
+ĐỀ CƯƠNG CHI TIẾT HỌC PHẦN
+KHAI PHÁ DỮ LIỆU 
+MSHP: 220269
+1. Thông tin chung (General information):
+Đối tượng học: 	
+Trình độ đào tạo: Đại học
+Ngành: Công nghệ Thông tin
+Chuyên ngành: ……………………………………. (nếu có)
+Học kỳ: VII		 Năm thứ: 4
+Điều kiện tham gia học phần:
+2. Nguồn học liệu (Learning resources):
+3. Mô tả học phần (Course description):
+Học phần Khai phá dữ liệu giới thiệu các vấn đề cơ bản của khoa học dữ liệu và các  kỹ thuật khai phá dữ liệu phổ biến. Sinh viên sẽ được rèn luyện các kỹ năng xây dựng mô hình phân lớp, phân cụm, khai thác luật kết hợp trên dữ liệu dạng bảng, dữ liệu log, dữ liệu văn bản bằng ngôn ngữ lập trình Python hoặc R và các công cụ trực quan. Đồng thời môn học cũng rèn luyện thái độ phù hợp khi khai phá dữ liệu và mang đến cho sinh viên góc nhìn đúng đắn về vai trò của khoa học dữ liệu trong bối cảnh hiện đại.
+4. Chuẩn đầu ra của học phần (Course learning outcomes):
+Sau khi hoàn thành học phần, sinh viên có thể:
+5. Nội dung học phần (Course content)
+6. Phương pháp dạy và học (Teaching and learning methods):
+Diễn giảng
+Vấn đáp (Questions – Answers)
+Hoạt động nhóm (Group-based Learning)
+Học dựa trên dự án (Project-based Learning)
+Thao tác mẫu (Demo)
+7. Đánh giá học phần (Course assessment):
+8. Các quy định (Course requirements and expectation):
+8.1. Quy định về tham dự lớp học
+Sinh viên có trách nhiệm tham dự đầy đủ các buổi học. Trong trường hợp phải nghỉ học vì lý do bất khả kháng thì phải có giấy tờ chứng minh đầy đủ và hợp lý.
+Sinh viên vắng quá 20% số giờ dự giảng của học phần bị xem như không hoàn thành học phần và phải đăng ký học lại vào học kỳ sau. Những trường hợp khác phải do Ban Giám hiệu hoặc Trưởng khoa quyết định.
+8.2. Quy định về hành vi trong lớp học
+Học phần được thực hiện trên nguyên tắc tôn trọng người học và người dạy. Mọi hành vi làm ảnh hưởng đến quá trình dạy và học đều bị nghiêm cấm.
+Sinh viên phải đi học đúng giờ qui định. 
+Tuyệt đối không làm ồn, gây ảnh hưởng đến người khác trong quá trình học.
+Tuyệt đối không được ăn, nhai kẹo cao su, sử dụng các thiết bị như điện thoại để nghe nhạc trong giờ học.
+Máy tính xách tay, máy tính bảng chỉ được sử dụng trên lớp với mục đích ghi chép bài giảng, tính toán phục vụ bài giảng, bài tập. Tuyệt đối không dùng vào việc khác.
+Sinh viên vi phạm các nguyên tắc trên sẽ bị mời ra khỏi lớp và bị coi là vắng buổi học đó.
+8.3. Quy định về học vụ
+Các vấn đề liên quan đến xin bảo lưu điểm, khiếu nại điểm, chấm phúc tra, kỷ luật thi cử được thực hiện theo quy chế học vụ của Trường Đại học Trà Vinh.
+9. Dự kiến danh sách cán bộ tham gia giảng dạy
+TS. Nguyễn Bảo Ân
+ThS. Hà Thị Thúy Vi
+ThS. Phạm Thị Trúc Mai
+10. Dự kiến mức tiêu hao trang thiết bị, vật tư, công cụ, phục vụ giảng dạy/Sinh viên.
+11. Phiếu Rubric (Phụ lục kèm)
+Ngày phê duyệt: ....../......./ .......
+PHỤ LỤC RUBRIC CHẤM BÁO CÁO BÀI TẬP LỚN
+TÊN ĐỀ TÀI:	
+Sinh viên thực hiện:	MSSV:	
+	Ngày     tháng    năm 
+	Cán bộ chấm báo cáo
+	(Ký và ghi rõ họ tên)
+Loại học phần | Số tín chỉ | Số giờ dự giảng | Giờ tự học và giờ học khác
+Đại cương          
+Cơ sở                 
+Chuyên ngành   🗹 | Lý thuyết: 	2
+Thực hành: 	1 | Lý thuyết: 	30
+Thực hành: 	30 | 90
+Học phần tiên quyết | Cơ sở dữ liệu                                             MSHP: 220096
+Thống kê và phân tích dữ liệu		MSHP: 320045
+Học phần song hành | (tên học phần)                                             MSHP: ……..
+Các yêu cầu khác | Kiến thức: Lập trình Python
+Kỹ năng: Đọc hiểu tài liệu tiếng Anh
+Thái độ: Nghiêm túc
+Giáo trình/ Tài liệu học tập chính | [1] Paul Deitel, Harvey Deitel (2021). Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and The Cloud. London: Pearson. Ký hiệu xếp giá: 005.133 / D325. https://opac.tvu.edu.vn/pages/opac/wpid-detailbib-id-41734.html
+[2] Jiawei Han, Micheline Kamber (2011). Data mining: Concepts and Techniques 3rd Edition. Morgan Kaufmann Publishers. Ký hiệu xếp giá:  / H233. https://opac.tvu.edu.vn/pages/opac/wpid-detailbib-id-22130.html
+Tài liệu tham khảo thêm | [3] Galit Shmueli, Peter C. Bruce, Peter Gedeck, Nitin R. Patel (2020). Data Mining for Business Analytics: Concepts, Techniques and Applications in Python. New Jersey: Wiley. Ký hiệu xếp giá:  / S558. https://opac.tvu.edu.vn/pages/opac/wpid-detailbib-id-41716.html
+[4] Chantal D. Larose, Daniel T. Larose (2019). Data Science Using Python and R (Wiley Series on Methods and Applications in Data Mining). New Jersey: Wiley. Ký hiệu xếp giá:  / L331. https://opac.tvu.edu.vn/pages/opac/wpid-detailbib-id-41748.html
+Các loại học liệu khác | [5] https://www.cs.waikato.ac.nz/ml/weka/
+[6] https://orangedatamining.com/
+Chuẩn đầu ra của học phần | Đáp ứng CĐR của CTĐT | Trình độ năng lực | TUA
+Về kiến thức: | Về kiến thức: | Về kiến thức: | Về kiến thức: | Về kiến thức:
+Trình bày quy trình phát hiện tri thức | 1 | 3 | TUA
+Trình bày được các bài toán khai phá dữ liệu quan trọng | 1 | 3 | TUA
+Vận dụng được các kỹ thuật khai phá dữ liệu trong bối cảnh cụ thể | 2 | 3 | TUA
+Đánh giá được hiệu năng và ưu khuyết điểm của các thuật toán khai phá dữ liệu | 2 | 4 | TUA
+Về kỹ năng (bao gồm kỹ năng chuyên môn và kỹ năng mềm) | Về kỹ năng (bao gồm kỹ năng chuyên môn và kỹ năng mềm) | Về kỹ năng (bao gồm kỹ năng chuyên môn và kỹ năng mềm) | Về kỹ năng (bao gồm kỹ năng chuyên môn và kỹ năng mềm) | Về kỹ năng (bao gồm kỹ năng chuyên môn và kỹ năng mềm)
+Lập trình khai phá dữ liệu với ngôn ngữ Python | 4 | 4 | TUA
+Sử dụng các công cụ trực quan để khai phá dữ liệu | 4 | 4 | TUA
+Về thái độ: | Về thái độ: | Về thái độ: | Về thái độ: | Về thái độ:
+Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại | 9 | 2 | TA
+Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | 10 | 2 | TA
+Nội dung | CĐR học phần | Số giờ | Số giờ | Giờ tự học và giờ học khác
+Nội dung | CĐR học phần | LT | TH | Giờ tự học và giờ học khác
+Bài 1. GIỚI THIỆU VỀ KHAI PHÁ DỮ LIỆU | 1 | 5 | 0
+Nhu cầu khai phá dữ liệu
+Khái niệm về khai phá dữ liệu
+Các kỹ thuật khai phá dữ liệu cơ bản
+1.4. Các nguồn dữ liệu
+Các giai đoạn trong khai phá dữ liệu
+Kiến trúc điển hình của một hệ thống khai phá dữ liệu
+Ứng dụng của khai phá dữ liệu
+Kỹ năng mềm và thái độ | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu.
+Bài 2. HIỂU VỀ DỮ LIỆU VÀ TIỀN XỬ LÝ DỮ LIỆU | 2, 5, 6 | 5 | 5 | 20
+2.1. Khái niệm về tiền xử lý dữ liệu
+2.2. Phân tích khám phá dữ liệu (EDA)
+2.3. Làm sạch dữ liệu
+2.4. Tích hợp và chuyển dạng dữ liệu
+2.5. Rút gọn dữ liệu
+2.6. Trực quan hóa dữ liệu
+Kỹ năng mềm và thái độ | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu.
+Bài 3. KHAI PHÁ TẬP PHỔ BIẾN VÀ LUẬT KẾT HỢP | 3, 4, 5, 6 | 5 | 5 | 30
+3.1.	Các khái niệm cơ bản
+3.2.	Khai phá tập phổ biến
+3.3.	Thuật toán Apriori
+3.4	Thuật toán FP-Growth
+3.5.	Các dạng thức của luật kết hợp
+3.6. Đánh giá luật kết hợp
+Kỹ năng mềm và thái độ | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu.
+Bài 4. PHÂN LỚP VÀ HỒI QUY | 3, 4, 5, 6 | 10 | 15 | 20
+4.1. Khái niệm về phân lớp và hồi quy
+4.2. Các thuật toán dựa trên cây quyết định
+4.2. Thuật toán KNN
+4.3. Thuật toán Naive Bayes
+4.4. Thuật toán Support Vector Machine
+4.5. Đánh giá và lựa chọn mô hình phân lớp và hồi quy
+4.6. Các phương pháp tập hợp mô hình (Ensemble learning)
+4.6.1. Bagging và Boosting
+4.6.1. Thuật toán Random Forest
+4.6.2. Thuật toán AdaBoost
+Kỹ năng mềm và thái độ | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu.
+Bài 5. PHÂN CỤM DỮ LIỆU | 3, 4, 5, 6 | 5 | 5 | 20
+5.1. Giới thiệu về phân cụm dữ liệu
+5.2. Phân cụm dựa trên phân hoạch - thuật toán k-means
+5.3. Phân cụm phân cấp - thuật toán Agnes và Diana
+5.4. Phân cụm dựa trên mật độ -  thuật toán DBSCAN
+5.5. Đánh giá chất lượng cụm
+Kỹ năng mềm và thái độ | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu. | (7) Xác định được vai trò của khai phá dữ liệu trong bối cảnh hiện đại
+(8) Trình bày các vấn đề về đạo đức và ảnh hưởng xã hội của khai phá dữ liệu.
+Hình thức đánh giá/thời gian | Nội dung 
+đánh giá | CĐR của học phần | Tiêu chí đánh giá | Tỷ lệ %
+Đánh giá quá trình | Kiểm tra lý thuyết | Từ bài 1 đến bài 3 | Từ 1 đến 6 | Theo đáp án | 25%
+Đánh giá quá trình | Bài tập lớn | Từ bài 2 đến bài 5 | Từ 2 đến 8 | Theo phiếu chấm | 25%
+Đánh giá kết thúc học phần | Trắc nghiệm | Kiến thức từ bài 1 đến bài 5 | Từ 1 đến 8 | Theo đáp án | 50%
+Nội dung | Số giờ | Số giờ | Mức tiêu hao trang thiết bị, vật tư, công cụ phục vụ giảng dạy/SV
+Nội dung | LT | TH | Mức tiêu hao trang thiết bị, vật tư, công cụ phục vụ giảng dạy/SV
+Bài 1. Giới thiệu về khai phá dữ liệu | 5 | 0 | Lý thuyết: Bút lông hoặc phấn, bảng trắng/bảng đen, máy chiếu hoặc tivi, bông lau bảng/lớp
+Bài 2. Hiểu về dữ liệu và tiền xử lý dữ liệu | 5 | 5 | Thực hành: 1 bộ máy tính/SV
+Lý thuyết: Bút lông hoặc phấn, bảng trắng/bảng đen, máy chiếu hoặc tivi, bông lau bảng/lớp
+Bài 3. Khai phá tập phổ biến và luật kết hợp | 5 | 5 | Thực hành: 1 bộ máy tính/SV
+Lý thuyết: Bút lông hoặc phấn, bảng trắng/bảng đen, máy chiếu hoặc tivi, bông lau bảng/lớp
+Bài 4. Phân lớp và hồi quy | 10 | 15 | Thực hành: 1 bộ máy tính/SV
+Lý thuyết: Bút lông hoặc phấn, bảng trắng/bảng đen, máy chiếu hoặc tivi, bông lau bảng/lớp
+Bài 5. Phân cụm dữ liệu | 5 | 5 | Thực hành: 1 bộ máy tính/SV
+Lý thuyết: Bút lông hoặc phấn, bảng trắng/bảng đen, máy chiếu hoặc tivi, bông lau bảng/lớp
+TRƯỞNG KHOA
+(Ký và ghi rõ họ tên) | TRƯỞNG BỘ MÔN 
+(Ký và ghi rõ họ tên) | GIẢNG VIÊN 
+BIÊN SOẠN
+
+
+Phạm Thị Trúc Mai
+GIẢNG VIÊN 
+PHẢN BIỆN
+
+
+Hà Thị Thúy Vi
+TRƯỜNG KỸ THUẬT VÀ CÔNG NGHỆ
+KHOA CÔNG NGHỆ THÔNG TIN | PHIẾU CHẤM BÁO CÁO 
+BÀI TẬP LỚN
+MÃ ĐỀ TÀI: | Môn: Khai phá dữ liệu
+Lớp:
+CĐR 
+HP | CĐR
+CTĐT | Nội  dung | Thang điểm | Điểm chấm
+Tiêu chí đánh giá 1:  Giới thiệu đề tài (1,0đ) | Tiêu chí đánh giá 1:  Giới thiệu đề tài (1,0đ) | Tiêu chí đánh giá 1:  Giới thiệu đề tài (1,0đ) | Tiêu chí đánh giá 1:  Giới thiệu đề tài (1,0đ) | Tiêu chí đánh giá 1:  Giới thiệu đề tài (1,0đ)
+LO2 | PLO1 | Nêu bật được lý do chọn đề tài. Mục tiêu đề tài cụ thể rõ ràng (0.5đ) | 1,0
+LO2 | PLO1 | Xác định đúng đối tượng, bộ dữ liệu nghiên cứu và phương pháp nghiên cứu phù hợp (0.5đ) | 1,0
+Tiêu chí đánh giá 2: Cơ sở lý thuyết (4,0đ) | Tiêu chí đánh giá 2: Cơ sở lý thuyết (4,0đ) | Tiêu chí đánh giá 2: Cơ sở lý thuyết (4,0đ) | Tiêu chí đánh giá 2: Cơ sở lý thuyết (4,0đ) | Tiêu chí đánh giá 2: Cơ sở lý thuyết (4,0đ)
+LO3 | PLO2 | Trình bày đầy đủ các lý thuyết liên quan đến đề tài (1.0đ) | 4,0
+LO3 | PLO3 | Giới thiệu rõ ràng, cụ thể về bộ dữ liệu:
+- Thu thập và mô tả cụ thể về bộ dữ liệu (1.0đ)
+- Phân tích khám phá dữ liệu thông qua danh sách các biến, quá trình tiền xử lý dữ liệu (1.0đ)
+- Phân tích khám phá dữ liệu thông qua thống kê mô tả, trực quan hóa bộ dữ liệu hoàn chỉnh sau khi tiền xử lý (1.0đ) | 4,0
+Tiêu chí đánh giá 3: Thực hiện khai phá dữ liệu (4,0đ) | Tiêu chí đánh giá 3: Thực hiện khai phá dữ liệu (4,0đ) | Tiêu chí đánh giá 3: Thực hiện khai phá dữ liệu (4,0đ) | Tiêu chí đánh giá 3: Thực hiện khai phá dữ liệu (4,0đ) | Tiêu chí đánh giá 3: Thực hiện khai phá dữ liệu (4,0đ)
+LO4 | PLO5 | Sơ đồ workflow đảm bảo giải quyết trọn vẹn mục tiêu đề tài đặt ra (1.0đ) | 4,0
+LO5 | PLO4 | Sử dụng python hoặc công cụ trực quan để thực hiện đầy đủ, đúng đắn các giai đoạn khai phá dữ liệu (phân lớp/hồi quy) tuân theo workflow đã đề xuất (1.0đ) | 4,0
+LO6 | PLO4 | Sử dụng python hoặc công cụ trực quan để thực hiện đầy đủ, đúng đắn các giai đoạn khai phá dữ liệu (phân cụm) tuân theo workflow đã đề xuất (1.0đ) | 4,0
+LO4 | PLO4 | Có đánh giá, nhận xét rõ ràng kết quả thu được sau mỗi công đoạn khai phá dữ liệu (1.0đ) | 4,0
+Tiêu chí đánh giá 4: Kết luận và hướng phát triển (1,0đ) | Tiêu chí đánh giá 4: Kết luận và hướng phát triển (1,0đ) | Tiêu chí đánh giá 4: Kết luận và hướng phát triển (1,0đ) | Tiêu chí đánh giá 4: Kết luận và hướng phát triển (1,0đ) | Tiêu chí đánh giá 4: Kết luận và hướng phát triển (1,0đ)
+LO7 | PLO9 | Đánh giá được kết quả thực hiện, nhận thấy ưu nhược điểm (0.5đ) | 1,0
+LO8 | PLO10 | Đưa ra được hướng phát triển phù hợp (0.5đ) | 1,0
+TỔNG ĐIỂM | TỔNG ĐIỂM | TỔNG ĐIỂM | TỔNG ĐIỂM

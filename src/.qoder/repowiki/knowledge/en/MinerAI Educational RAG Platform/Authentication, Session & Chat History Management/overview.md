@@ -1,0 +1,1 @@
+Provides user authentication with JWT, profile management, and persistent chat history storage with MongoDB or local JSON fallback.

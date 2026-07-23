@@ -1,0 +1,3 @@
+{"timestamp": "2026-05-02T01:05:01.712899", "query": "Test query", "answer": "Test answer", "mode": "qa", "chapter": "Test", "sources": ["test.pdf"], "response_time": 1.5, "feedback": null}
+{"timestamp": "2026-05-02T01:09:01.690951", "query": "Test query", "answer": "Test answer", "mode": "qa", "chapter": "Test", "sources": ["test.pdf"], "response_time": 1.5, "feedback": null}
+{"timestamp": "2026-05-02T01:54:29.045266", "query": "Test query", "answer": "Test answer", "mode": "qa", "chapter": "Test", "sources": ["test.pdf"], "response_time": 1.5, "feedback": null}

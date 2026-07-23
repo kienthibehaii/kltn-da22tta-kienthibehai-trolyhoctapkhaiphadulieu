@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: auth
+title: Authentication, Session & Chat History Management
+scope:
+    - auth/
+source_files: []
+depends_on: []
+related_to: []

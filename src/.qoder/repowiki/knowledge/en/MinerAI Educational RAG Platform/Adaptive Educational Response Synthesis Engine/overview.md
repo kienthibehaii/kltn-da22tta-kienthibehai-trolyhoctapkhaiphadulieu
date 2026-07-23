@@ -1,0 +1,1 @@
+Orchestrates the transformation of raw RAG answers into personalized, multi-modal educational content using pedagogical reasoning and adaptive difficulty.

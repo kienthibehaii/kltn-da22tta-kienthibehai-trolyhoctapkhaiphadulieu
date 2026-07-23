@@ -1,0 +1,441 @@
+{
+  "course_id": "DATA101",
+  "course_name": "Khai phá dữ liệu (Data Mining)",
+  "course_code": "DATA101",
+  "credits": 3,
+  "total_hours": 45,
+  "semester": "Fall 2026",
+  "instructor": "Dr. Nguyen Van A",
+  "learning_outcomes": [
+    {
+      "id": "LO1",
+      "description": "Understand fundamentals of data mining and its applications",
+      "bloom_level": "knowledge",
+      "competency_type": "theoretical"
+    },
+    {
+      "id": "LO2",
+      "description": "Apply data mining techniques to real-world problems",
+      "bloom_level": "application",
+      "competency_type": "practical"
+    },
+    {
+      "id": "LO3",
+      "description": "Analyze and compare different data mining algorithms",
+      "bloom_level": "analysis",
+      "competency_type": "theoretical"
+    },
+    {
+      "id": "LO4",
+      "description": "Design and implement data mining solutions",
+      "bloom_level": "synthesis",
+      "competency_type": "practical"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "CH1",
+      "number": 1,
+      "title": "Introduction to Data Mining",
+      "description": "Overview of data mining concepts, history, and applications",
+      "hours": 3,
+      "topics": [
+        {
+          "id": "T1.1",
+          "title": "What is Data Mining?",
+          "description": "Definition and scope of data mining",
+          "keywords": [
+            "definition",
+            "data mining",
+            "concepts",
+            "applications"
+          ],
+          "learning_outcomes": [
+            "LO1"
+          ],
+          "teaching_type": "lecture",
+          "hours": 1
+        },
+        {
+          "id": "T1.2",
+          "title": "Data Mining Process",
+          "description": "Steps in the data mining process",
+          "keywords": [
+            "process",
+            "steps",
+            "workflow",
+            "methodology"
+          ],
+          "learning_outcomes": [
+            "LO1"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        }
+      ],
+      "learning_outcomes": [
+        "LO1"
+      ],
+      "assessment_types": [
+        "quiz",
+        "assignment"
+      ],
+      "importance": 0.95
+    },
+    {
+      "id": "CH2",
+      "number": 2,
+      "title": "Data Preprocessing",
+      "description": "Cleaning, transforming, and preparing data",
+      "hours": 6,
+      "topics": [
+        {
+          "id": "T2.1",
+          "title": "Data Cleaning",
+          "description": "Handling missing values and outliers",
+          "keywords": [
+            "cleaning",
+            "missing",
+            "outliers",
+            "quality"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T2.2",
+          "title": "Data Transformation",
+          "description": "Normalization and feature scaling",
+          "keywords": [
+            "transformation",
+            "normalization",
+            "scaling",
+            "features"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lab",
+          "hours": 2
+        },
+        {
+          "id": "T2.3",
+          "title": "Dimensionality Reduction",
+          "description": "PCA and feature selection",
+          "keywords": [
+            "dimensionality",
+            "PCA",
+            "features",
+            "reduction"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        }
+      ],
+      "learning_outcomes": [
+        "LO2"
+      ],
+      "assessment_types": [
+        "quiz",
+        "assignment"
+      ],
+      "importance": 0.92
+    },
+    {
+      "id": "CH3",
+      "number": 3,
+      "title": "Classification Algorithms",
+      "description": "Building predictive models for classification tasks",
+      "hours": 9,
+      "topics": [
+        {
+          "id": "T3.1",
+          "title": "Logistic Regression",
+          "description": "Binary and multiclass classification",
+          "keywords": [
+            "logistic",
+            "regression",
+            "classification",
+            "probability"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T3.2",
+          "title": "Naive Bayes",
+          "description": "Probabilistic classification with Bayes theorem",
+          "keywords": [
+            "naive bayes",
+            "probabilistic",
+            "bayes",
+            "theorem"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T3.3",
+          "title": "K-Nearest Neighbors",
+          "description": "Distance-based classification method",
+          "keywords": [
+            "knn",
+            "distance",
+            "neighbors",
+            "similarity"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lab",
+          "hours": 2
+        },
+        {
+          "id": "T3.4",
+          "title": "Support Vector Machines",
+          "description": "SVM for classification and regression",
+          "keywords": [
+            "svm",
+            "support vector",
+            "kernel",
+            "margin"
+          ],
+          "learning_outcomes": [
+            "LO3"
+          ],
+          "teaching_type": "lecture",
+          "hours": 3
+        }
+      ],
+      "learning_outcomes": [
+        "LO2",
+        "LO3"
+      ],
+      "assessment_types": [
+        "quiz",
+        "exam",
+        "assignment"
+      ],
+      "importance": 0.88
+    },
+    {
+      "id": "CH4",
+      "number": 4,
+      "title": "Decision Trees and Ensemble Methods",
+      "description": "Tree-based models and ensemble learning",
+      "hours": 9,
+      "topics": [
+        {
+          "id": "T4.1",
+          "title": "Decision Tree Basics",
+          "description": "Structure and building process of decision trees",
+          "keywords": [
+            "decision tree",
+            "split",
+            "node",
+            "leaf",
+            "recursion"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T4.2",
+          "title": "Information Gain and Entropy",
+          "description": "Calculating information gain for tree building",
+          "keywords": [
+            "information gain",
+            "entropy",
+            "gini index",
+            "criteria"
+          ],
+          "learning_outcomes": [
+            "LO3"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T4.3",
+          "title": "Random Forest",
+          "description": "Ensemble method using multiple decision trees",
+          "keywords": [
+            "random forest",
+            "ensemble",
+            "bagging",
+            "bootstrap"
+          ],
+          "learning_outcomes": [
+            "LO4"
+          ],
+          "teaching_type": "lab",
+          "hours": 2
+        },
+        {
+          "id": "T4.4",
+          "title": "Boosting Methods",
+          "description": "Gradient boosting and XGBoost",
+          "keywords": [
+            "boosting",
+            "gradient",
+            "xgboost",
+            "sequential"
+          ],
+          "learning_outcomes": [
+            "LO4"
+          ],
+          "teaching_type": "lecture",
+          "hours": 3
+        }
+      ],
+      "learning_outcomes": [
+        "LO2",
+        "LO3",
+        "LO4"
+      ],
+      "assessment_types": [
+        "quiz",
+        "exam",
+        "project"
+      ],
+      "importance": 0.9
+    },
+    {
+      "id": "CH5",
+      "number": 5,
+      "title": "Clustering and Dimensionality Reduction",
+      "description": "Unsupervised learning techniques",
+      "hours": 6,
+      "topics": [
+        {
+          "id": "T5.1",
+          "title": "K-Means Clustering",
+          "description": "Partitioning-based clustering",
+          "keywords": [
+            "kmeans",
+            "clustering",
+            "centroid",
+            "partition"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T5.2",
+          "title": "Hierarchical Clustering",
+          "description": "Agglomerative and divisive clustering",
+          "keywords": [
+            "hierarchical",
+            "dendrogram",
+            "linkage",
+            "distance"
+          ],
+          "learning_outcomes": [
+            "LO2"
+          ],
+          "teaching_type": "lecture",
+          "hours": 2
+        },
+        {
+          "id": "T5.3",
+          "title": "Principal Component Analysis",
+          "description": "PCA for dimensionality reduction",
+          "keywords": [
+            "pca",
+            "principal component",
+            "variance",
+            "reduction"
+          ],
+          "learning_outcomes": [
+            "LO3"
+          ],
+          "teaching_type": "lab",
+          "hours": 2
+        }
+      ],
+      "learning_outcomes": [
+        "LO2",
+        "LO3"
+      ],
+      "assessment_types": [
+        "quiz",
+        "assignment"
+      ],
+      "importance": 0.8
+    }
+  ],
+  "assessment": {
+    "quiz": {
+      "name": "Weekly Quizzes",
+      "weight": 0.2,
+      "type": "quiz",
+      "difficulty": "medium",
+      "question_types": [
+        "multiple-choice",
+        "short-answer"
+      ]
+    },
+    "assignment": {
+      "name": "Programming Assignments",
+      "weight": 0.3,
+      "type": "assignment",
+      "difficulty": "hard",
+      "question_types": [
+        "practical",
+        "implementation"
+      ]
+    },
+    "midterm": {
+      "name": "Midterm Exam",
+      "weight": 0.2,
+      "type": "exam",
+      "difficulty": "medium",
+      "question_types": [
+        "multiple-choice",
+        "short-answer",
+        "essay"
+      ]
+    },
+    "project": {
+      "name": "Data Mining Project",
+      "weight": 0.2,
+      "type": "project",
+      "difficulty": "hard",
+      "question_types": [
+        "practical",
+        "analysis",
+        "report"
+      ]
+    },
+    "final": {
+      "name": "Final Exam",
+      "weight": 0.1,
+      "type": "exam",
+      "difficulty": "hard",
+      "question_types": [
+        "essay",
+        "problem-solving"
+      ]
+    }
+  },
+  "prerequisites": [],
+  "created_at": "2026-05-26T10:29:52.717582"
+}

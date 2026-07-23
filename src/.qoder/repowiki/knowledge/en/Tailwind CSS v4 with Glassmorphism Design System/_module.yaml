@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: frontend_style
+title: Tailwind CSS v4 with Glassmorphism Design System
+scope: []
+source_files:
+    - frontend/src/index.css
+    - frontend/vite.config.ts
+    - frontend/package.json
+    - frontend/src/App.tsx
+    - frontend/src/components/Sidebar.tsx
+    - frontend/src/components/Header.tsx
+    - frontend/src/components/MentorTab.tsx
+depends_on: []
+related_to: []

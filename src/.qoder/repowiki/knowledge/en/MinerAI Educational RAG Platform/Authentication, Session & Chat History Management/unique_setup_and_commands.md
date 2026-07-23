@@ -1,0 +1,2 @@
+- Requires `MONGODB_URI` in `.env` for MongoDB mode; otherwise falls back to local JSON storage (`auth/users_local.json`).
+- Requires `JWT_SECRET_KEY` in `.env`; warns and uses an insecure default if missing.

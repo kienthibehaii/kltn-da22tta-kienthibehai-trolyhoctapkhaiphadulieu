@@ -1,0 +1,1 @@
+FastAPI for HTTP routing; PyJWT (HS256) for JWT; bcrypt for password hashing; PyMongo for MongoDB access; dotenv for environment configuration.

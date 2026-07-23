@@ -1,0 +1,3 @@
+- Lazy-loading of heavy ML models (CrossEncoder) using module-level singletons to prevent import-time latency.
+- Enriching Document metadata with consistent fields like `chunk_id`, `section_title`, and `embedding_model` during the chunking phase.
+- Providing convenience wrapper functions (e.g., `create_reranker`, `verify_citations`) alongside primary classes for simplified one-off usage.

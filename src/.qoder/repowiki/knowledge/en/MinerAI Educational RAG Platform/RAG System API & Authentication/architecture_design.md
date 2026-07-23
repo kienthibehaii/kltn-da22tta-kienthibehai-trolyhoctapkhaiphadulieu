@@ -1,0 +1,5 @@
+- Entry Point: `backend_api.py` serves as the primary FastAPI application, initializing global RAG pipeline components (vector store, QA chain) asynchronously on startup.
+- Modular Routing: Authentication and chat history logic are encapsulated in the `auth/` package (`api_routes.py`, `auth_manager.py`, `chat_history_manager.py`) and included as routers.
+- Dependency Injection: Uses FastAPI's `Depends` for JWT-based user authentication (`get_current_user`) across protected endpoints.
+- Async/Sync Bridge: Heavy RAG operations (embedding, LLM inference) are executed in thread pools via `asyncio.to_thread` to prevent blocking the Uvicorn event loop.
+- State Management: Maintains in-memory session storage for transient quiz data and conversation context, while persisting user data and logs to MongoDB or local JSON fallbacks.

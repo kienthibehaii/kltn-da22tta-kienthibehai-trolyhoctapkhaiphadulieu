@@ -1,0 +1,4 @@
+- FastAPI with Uvicorn for asynchronous HTTP server.
+- Pydantic for request/response validation.
+- JWT (HS256) and bcrypt for authentication security.
+- MongoDB (via PyMongo) for persistent user and chat history storage, with a local JSON fallback mechanism.

@@ -1,0 +1,1 @@
+Provides RESTful endpoints for Retrieval-Augmented Generation (RAG) interactions, user authentication, and chat history management.

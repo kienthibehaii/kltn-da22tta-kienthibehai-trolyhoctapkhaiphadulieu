@@ -1,0 +1,458 @@
+{
+  "mongo_uri": "mongodb+srv://user:tYqnzexe3iJwbzUY@cluster0.gg7ecmf.mongodb.net/",
+  "databases": {
+    "chatbot_db": {
+      "conversations": {
+        "count": 884,
+        "samples": [
+          {
+            "_id": "6a3ebc03a59cd13b84f96fa5",
+            "session_id": "0e19bebc-d6ed-488d-bb06-5295fbbda596",
+            "role": "assistant",
+            "content": "Tôi không tìm thấy thông tin chuyên môn phù hợp hoặc không đủ độ tin cậy để trả lời chính xác câu hỏi này (Độ tin cậy: 33% - Thấp).\n\nVui lòng thử diễn đạt lại câu hỏi rõ ràng hơn hoặc hỏi về các chủ đề có trong tài liệu bài giảng.\n\n\n\n---\n**Độ tin cậy: 33% (Thấp)**\n⚠ Citations 33% | ⚠ Answerability 33%\n_Công thức: Confidence = 0.5×CtxCoverage(0.33) + 0.5×Answerability(0.33) = 0.333_",
+            "citations": [
+              {
+                "index": 1,
+                "filename": "thuattoanpython.docx",
+                "page": 2,
+                "slide": null,
+                "content": "### I. TỪ VIẾT TẮT VÀ THUẬT NGỮ\nTỪ VIẾT TẮT VÀ THUẬT NGỮ\n| **Viết tắt** | **Tiếng Anh** | **Dịch nghĩa** |\n|--------------|---------------|----------------|\n| KDD | Knowledge discovery in databases | Khám phá tri thức trong cơ sở dữ liệu |\n| Classification | Classification | Phân lớp (học có giám sát) |\n| Clustering | Clustering | Gom cụm, gom nhóm (học không giám sát) |\n| DM | Data mining | Khai thác dữ liệu |\n| Ensemble-based method | Ensemble-based method | Phương pháp tập hợp mô hình |\n| Feature space | Feature space | Không gian đặc trưng |\n| Gini index | Gini index | Chỉ số Gini |\n| Hierarchical clustering | Hierarchical clustering | Gom cụm phân cấp |\n| Hyperplane | Hyperplane | Siêu phẳng |\n| Impurity | Impurity | Độ hỗn loạn |\n| Information gain | Information gain | Độ lợi thông t...",
+                "full_source": "data\\thuattoanpython.docx",
+                "relevance_score": 0.9299999999999999
+              }
+            ],
+            "timestamp": "2026-06-26T17:50:59.560000"
+          },
+          {
+            "_id": "6a3ebc03a59cd13b84f96fa4",
+            "session_id": "0e19bebc-d6ed-488d-bb06-5295fbbda596",
+            "role": "user",
+            "content": "Hãy nêu định nghĩa về Khai phá dữ liệu (Data mining) và liệt kê 3 ứng dụng thực tế của nó trong kinh doanh hoặc đời sống",
+            "citations": [],
+            "timestamp": "2026-06-26T17:50:59.428000"
+          },
+          {
+            "_id": "6a3eba4ca59cd13b84f96fa2",
+            "session_id": "072f179f-9238-4196-a60e-386aaaf49637",
+            "role": "assistant",
+            "content": "Tôi không tìm thấy thông tin chuyên môn phù hợp hoặc không đủ độ tin cậy để trả lời chính xác câu hỏi này (Độ tin cậy: 1% - Thấp).\n\nVui lòng thử diễn đạt lại câu hỏi rõ ràng hơn hoặc hỏi về các chủ đề có trong tài liệu bài giảng.\n\n\n\n---\n**Độ tin cậy: 1% (Thấp)**\n⚠ Citations 0% | ⚠ Answerability 3%\n_Công thức: Confidence = 0.5×CtxCoverage(0.00) + 0.5×Answerability(0.03) = 0.015_",
+            "citations": [],
+            "timestamp": "2026-06-26T17:43:40.707000"
+          },
+          {
+            "_id": "6a3eba4ca59cd13b84f96fa1",
+            "session_id": "072f179f-9238-4196-a60e-386aaaf49637",
+            "role": "user",
+            "content": "Thuật toán C4.5 sử dụng độ đo nào để khắc phục nhược điểm của Information Gain, và nhược điểm đó cụ thể là gì? Đồng thời, hãy cho tôi xem đoạn code Python hoàn chỉnh để tính toán và vẽ đường cong ROC (ROC Curve) cho mô hình Cây quyết định.",
+            "citations": [],
+            "timestamp": "2026-06-26T17:43:40.596000"
+          },
+          {
+            "_id": "6a3eabafa59cd13b84f96f9f",
+            "session_id": "8c5d113f-8617-460a-b764-07214b4fbb4b",
+            "role": "assistant",
+            "content": "Tôi không tìm thấy thông tin chuyên môn phù hợp hoặc không đủ độ tin cậy để trả lời chính xác câu hỏi này (Độ tin cậy: 1% - Thấp).\n\nVui lòng thử diễn đạt lại câu hỏi rõ ràng hơn hoặc hỏi về các chủ đề có trong tài liệu bài giảng.\n\n\n\n---\n**Độ tin cậy: 1% (Thấp)**\n⚠ Citations 0% | ⚠ Answerability 3%\n_Công thức: Confidence = 0.5×CtxCoverage(0.00) + 0.5×Answerability(0.03) = 0.015_",
+            "citations": [],
+            "timestamp": "2026-06-26T16:41:19.016000"
+          }
+        ]
+      }
+    },
+    "rag_system": {
+      "questions": {
+        "count": 24,
+        "samples": [
+          {
+            "_id": "6a3d2743f5cc6a99200e427f",
+            "id": 5,
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Nhược điểm chính của thuật toán Apriori là gì?",
+            "options": {
+              "A": "Không thể xử lý dữ liệu nhị phân",
+              "B": "Cần nhiều lần quét cơ sở dữ liệu và sinh ra nhiều tập ứng viên",
+              "C": "Chỉ hoạt động với dữ liệu số",
+              "D": "Không tìm được các luật có confidence thấp"
+            },
+            "correct_answer": "B",
+            "explanation": "Apriori có hai nhược điểm chính: (1) Phải quét cơ sở dữ liệu nhiều lần (k lần quét cho k-itemset), (2) Sinh ra số lượng lớn tập ứng viên Ck trước khi lọc. FP-Growth được đề xuất để khắc phục nhược điểm này.",
+            "source_reference": "Offline: Thuật toán Apriori",
+            "created_at": "2026-06-25T13:04:03.746000",
+            "created_by": "gemini_ai",
+            "topic": "apriori"
+          },
+          {
+            "_id": "6a3d2743f5cc6a99200e427e",
+            "id": 4,
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Bước nào là bước đầu tiên trong thuật toán Apriori?",
+            "options": {
+              "A": "Tạo tất cả các luật kết hợp",
+              "B": "Tính toán Lift của các tập mục",
+              "C": "Quét cơ sở dữ liệu để tìm các tập 1-itemset phổ biến (L1)",
+              "D": "Loại bỏ các tập mục không thỏa min_confidence"
+            },
+            "correct_answer": "C",
+            "explanation": "Apriori bắt đầu bằng cách quét toàn bộ cơ sở dữ liệu một lần để đếm số lần xuất hiện của từng mục đơn lẻ, từ đó tìm ra tập phổ biến 1 phần tử (L1) thỏa ngưỡng min_support.",
+            "source_reference": "Offline: Thuật toán Apriori",
+            "created_at": "2026-06-25T13:04:03.746000",
+            "created_by": "gemini_ai",
+            "topic": "apriori"
+          },
+          {
+            "_id": "6a3d2743f5cc6a99200e427d",
+            "id": 3,
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Confidence của luật kết hợp A → B được tính như thế nào?",
+            "options": {
+              "A": "support(A) / support(B)",
+              "B": "support(A ∪ B) / support(A)",
+              "C": "support(A ∪ B) / support(B)",
+              "D": "support(A) × support(B)"
+            },
+            "correct_answer": "B",
+            "explanation": "Confidence(A→B) = support(A∪B) / support(A). Đây là xác suất có điều kiện P(B|A) - xác suất giao dịch chứa B khi đã biết nó chứa A.",
+            "source_reference": "Offline: Thuật toán Apriori",
+            "created_at": "2026-06-25T13:04:03.746000",
+            "created_by": "gemini_ai",
+            "topic": "apriori"
+          },
+          {
+            "_id": "6a3d2743f5cc6a99200e427c",
+            "id": 2,
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Trong Apriori, 'support' của một tập mục {A, B} được định nghĩa là gì?",
+            "options": {
+              "A": "Xác suất mua A khi đã mua B",
+              "B": "Tỷ lệ giao dịch chứa cả A và B so với tổng số giao dịch",
+              "C": "Số lần A và B xuất hiện cùng nhau",
+              "D": "Mức độ tăng cường khi A và B đi cùng nhau"
+            },
+            "correct_answer": "B",
+            "explanation": "Support({A,B}) = số giao dịch chứa {A,B} / tổng số giao dịch. Đây là độ đo tần suất xuất hiện của tập mục trong cơ sở dữ liệu.",
+            "source_reference": "Offline: Thuật toán Apriori",
+            "created_at": "2026-06-25T13:04:03.746000",
+            "created_by": "gemini_ai",
+            "topic": "apriori"
+          },
+          {
+            "_id": "6a3d2743f5cc6a99200e427b",
+            "id": 1,
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Thuật toán Apriori sử dụng nguyên lý nào để giảm không gian tìm kiếm?",
+            "options": {
+              "A": "Nguyên lý Antimonotone: mọi tập con của tập phổ biến cũng là phổ biến",
+              "B": "Nguyên lý Greedy: luôn chọn mục có support cao nhất",
+              "C": "Nguyên lý Divide and Conquer: chia tập dữ liệu thành các phần nhỏ",
+              "D": "Nguyên lý Randomized: chọn ngẫu nhiên các ứng viên"
+            },
+            "correct_answer": "A",
+            "explanation": "Nguyên lý Antimonotone (còn gọi là tính chất Apriori): nếu một tập mục không phổ biến, thì mọi siêu tập của nó cũng không phổ biến. Điều này cho phép cắt tỉa không gian tìm kiếm hiệu quả.",
+            "source_reference": "Offline: Thuật toán Apriori",
+            "created_at": "2026-06-25T13:04:03.746000",
+            "created_by": "gemini_ai",
+            "topic": "apriori"
+          }
+        ]
+      },
+      "conversations": {
+        "count": 123,
+        "samples": [
+          {
+            "_id": "6a218b9c41d5e89de0dac7e8",
+            "user_id": "6a218b9b41d5e89de0dac7e3",
+            "title": "Conversation 5",
+            "created_at": "2026-06-04T14:28:44.457000",
+            "updated_at": "2026-06-04T14:28:44.457000",
+            "message_count": 0,
+            "is_active": true,
+            "metadata": {
+              "topics": [],
+              "difficulty_level": "beginner"
+            }
+          },
+          {
+            "_id": "6a218b9c41d5e89de0dac7e7",
+            "user_id": "6a218b9b41d5e89de0dac7e3",
+            "title": "Conversation 4",
+            "created_at": "2026-06-04T14:28:44.407000",
+            "updated_at": "2026-06-04T14:28:44.407000",
+            "message_count": 0,
+            "is_active": true,
+            "metadata": {
+              "topics": [],
+              "difficulty_level": "beginner"
+            }
+          },
+          {
+            "_id": "6a218b9c41d5e89de0dac7e6",
+            "user_id": "6a218b9b41d5e89de0dac7e3",
+            "title": "Conversation 3",
+            "created_at": "2026-06-04T14:28:44.352000",
+            "updated_at": "2026-06-04T14:28:44.352000",
+            "message_count": 0,
+            "is_active": true,
+            "metadata": {
+              "topics": [],
+              "difficulty_level": "beginner"
+            }
+          },
+          {
+            "_id": "6a218b9c41d5e89de0dac7e5",
+            "user_id": "6a218b9b41d5e89de0dac7e3",
+            "title": "Conversation 2",
+            "created_at": "2026-06-04T14:28:44.302000",
+            "updated_at": "2026-06-04T14:28:44.302000",
+            "message_count": 0,
+            "is_active": true,
+            "metadata": {
+              "topics": [],
+              "difficulty_level": "beginner"
+            }
+          },
+          {
+            "_id": "6a218b9c41d5e89de0dac7e4",
+            "user_id": "6a218b9b41d5e89de0dac7e3",
+            "title": "Conversation 1",
+            "created_at": "2026-06-04T14:28:44.253000",
+            "updated_at": "2026-06-04T14:28:44.253000",
+            "message_count": 0,
+            "is_active": true,
+            "metadata": {
+              "topics": [],
+              "difficulty_level": "beginner"
+            }
+          }
+        ]
+      },
+      "interaction_logs": {
+        "count": 138,
+        "samples": [
+          {
+            "_id": "6a3ebc03a59cd13b84f96fa3",
+            "user_id": "6a297750533dc793160647ed",
+            "question": "Hãy nêu định nghĩa về Khai phá dữ liệu (Data mining) và liệt kê 3 ứng dụng thực tế của nó trong kinh doanh hoặc đời sống",
+            "action_type": "chat",
+            "chapters": [
+              "01Intro.pptx",
+              "thuattoanpython.docx"
+            ],
+            "timestamp": "2026-06-26T17:50:59.348000"
+          },
+          {
+            "_id": "6a3eba4ca59cd13b84f96fa0",
+            "user_id": "6a297750533dc793160647ed",
+            "question": "Thuật toán C4.5 sử dụng độ đo nào để khắc phục nhược điểm của Information Gain, và nhược điểm đó cụ thể là gì? Đồng thời, hãy cho tôi xem đoạn code Python hoàn chỉnh để tính toán và vẽ đường cong ROC (ROC Curve) cho mô hình Cây quyết định.",
+            "action_type": "chat",
+            "chapters": [
+              "thuattoanpython.docx"
+            ],
+            "timestamp": "2026-06-26T17:43:40.482000"
+          },
+          {
+            "_id": "6a3eabaea59cd13b84f96f9d",
+            "user_id": "6a297750533dc793160647ed",
+            "question": "Thuật toán C4.5 sử dụng độ đo nào để khắc phục nhược điểm của Information Gain, và nhược điểm đó cụ thể là gì? Đồng thời, hãy cho tôi xem đoạn code Python hoàn chỉnh để tính toán và vẽ đường cong ROC (ROC Curve) cho mô hình Cây quyết định.",
+            "action_type": "chat",
+            "chapters": [
+              "thuattoanpython.docx"
+            ],
+            "timestamp": "2026-06-26T16:41:18.849000"
+          },
+          {
+            "_id": "6a3eaa40a59cd13b84f96f9a",
+            "user_id": "6a297750533dc793160647ed",
+            "question": "code  của KNN",
+            "action_type": "chat",
+            "chapters": [
+              "thuattoanpython.docx"
+            ],
+            "timestamp": "2026-06-26T16:35:12.660000"
+          },
+          {
+            "_id": "6a3ea94ca59cd13b84f96f97",
+            "user_id": "6a297750533dc793160647ed",
+            "question": "code của nó",
+            "action_type": "chat",
+            "chapters": [
+              "thuattoanpython.docx"
+            ],
+            "timestamp": "2026-06-26T16:31:08.458000"
+          }
+        ]
+      },
+      "users": {
+        "count": 157,
+        "samples": [
+          {
+            "_id": "6a3e95b94e8b7d3ca400987c",
+            "email": "bot@test.com",
+            "username": "testbot",
+            "password": "$2b$12$pcYnm99D51wKl8940PSSje3D8ttLV0gug7SMTQ2V5yASd.fCCy3Ey",
+            "full_name": "Test Bot",
+            "created_at": "2026-06-26T15:07:37.729000",
+            "last_login": "2026-06-26T15:43:56.266000",
+            "is_active": true,
+            "role": "user",
+            "profile": {
+              "avatar": null,
+              "bio": null,
+              "learning_level": "beginner",
+              "interests": []
+            },
+            "settings": {
+              "language": "vi",
+              "theme": "light",
+              "notifications": true
+            }
+          },
+          {
+            "_id": "6a3ced4c1875613d94574907",
+            "email": "admin@example.com",
+            "username": "admin",
+            "password": "$2b$12$ihwSqyyJjeXIR0PDk8kC/unTi1QQZhTQCGdwEwBzD1.8Q5eS6BKBu",
+            "full_name": "System Admin",
+            "created_at": "2026-06-25T08:56:43.923000",
+            "last_login": "2026-06-25T13:49:30.194000",
+            "is_active": true,
+            "role": "admin",
+            "profile": {
+              "avatar": null,
+              "bio": null,
+              "learning_level": "beginner",
+              "interests": []
+            },
+            "settings": {
+              "language": "vi",
+              "theme": "light",
+              "notifications": true
+            }
+          },
+          {
+            "_id": "6a3bfb146c4b624c8c7c3ff8",
+            "email": "wsmith@example.org",
+            "username": "zbates7605",
+            "password": "$2b$12$Ve0dd5KgpkhtN7PlZUnCd.QzsOhBbbHSNzqmCQKjEQ/RYXDi4fhD6",
+            "full_name": "Lauren Trevino",
+            "created_at": "2026-06-24T15:43:15.982000",
+            "last_login": null,
+            "is_active": true,
+            "role": "user",
+            "profile": {
+              "avatar": null,
+              "bio": null,
+              "learning_level": "beginner",
+              "interests": []
+            },
+            "settings": {
+              "language": "vi",
+              "theme": "light",
+              "notifications": true
+            }
+          },
+          {
+            "_id": "6a3bfada6c4b624c8c7c3ff7",
+            "email": "invalid-email",
+            "username": "test",
+            "password": "$2b$12$Ji6qkAV8RIBIH5Pigj6MhOrYAA5JNohOsbKUjcHCeSEb3b8igP90O",
+            "full_name": "Test",
+            "created_at": "2026-06-24T15:42:18.858000",
+            "last_login": null,
+            "is_active": true,
+            "role": "user",
+            "profile": {
+              "avatar": null,
+              "bio": null,
+              "learning_level": "beginner",
+              "interests": []
+            },
+            "settings": {
+              "language": "vi",
+              "theme": "light",
+              "notifications": true
+            }
+          },
+          {
+            "_id": "6a394c920897c22631cebc31",
+            "email": "huuchithtp@gmail.com",
+            "username": "huuchithtp",
+            "password": "",
+            "full_name": "Chí Hữu",
+            "google_id": "108286255133393599079",
+            "auth_provider": "google",
+            "created_at": "2026-06-22T14:54:10.539000",
+            "last_login": "2026-06-22T14:54:10.539000",
+            "is_active": true,
+            "role": "user",
+            "profile": {
+              "avatar": null,
+              "bio": null,
+              "learning_level": "beginner",
+              "interests": []
+            },
+            "settings": {
+              "language": "vi",
+              "theme": "light",
+              "notifications": true
+            }
+          }
+        ]
+      },
+      "messages": {
+        "count": 55,
+        "samples": [
+          {
+            "_id": "6a218b9741d5e89de0dac7dc",
+            "conversation_id": "6a218b9741d5e89de0dac7d8",
+            "role": "assistant",
+            "content": "Classification is...",
+            "created_at": "2026-06-04T14:28:39.930000",
+            "metadata": {}
+          },
+          {
+            "_id": "6a218b9741d5e89de0dac7db",
+            "conversation_id": "6a218b9741d5e89de0dac7d8",
+            "role": "user",
+            "content": "Explain classification",
+            "created_at": "2026-06-04T14:28:39.778000",
+            "metadata": {}
+          },
+          {
+            "_id": "6a218b9741d5e89de0dac7da",
+            "conversation_id": "6a218b9741d5e89de0dac7d8",
+            "role": "assistant",
+            "content": "Data mining is...",
+            "created_at": "2026-06-04T14:28:39.674000",
+            "metadata": {}
+          },
+          {
+            "_id": "6a218b9741d5e89de0dac7d9",
+            "conversation_id": "6a218b9741d5e89de0dac7d8",
+            "role": "user",
+            "content": "What is data mining?",
+            "created_at": "2026-06-04T14:28:39.473000",
+            "metadata": {}
+          },
+          {
+            "_id": "6a218b9641d5e89de0dac7d6",
+            "conversation_id": "6a218b9641d5e89de0dac7d5",
+            "role": "user",
+            "content": "Test message",
+            "created_at": "2026-06-04T14:28:38.274000",
+            "metadata": {}
+          }
+        ]
+      }
+    }
+  },
+  "databases_list": [
+    "chatbot_db",
+    "rag_system",
+    "admin",
+    "local"
+  ]
+}

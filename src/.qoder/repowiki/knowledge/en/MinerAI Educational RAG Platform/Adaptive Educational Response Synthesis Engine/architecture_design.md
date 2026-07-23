@@ -1,0 +1,5 @@
+- **Orchestration Layer**: `EducationalEngine` (`__init__.py`) serves as the primary facade, coordinating synthesis, visual generation, and difficulty adaptation.
+- **Pedagogical Core**: `PedagogicalReasoner` and `LocalPedagogicalAnalyzer` perform rule-based, LLM-free analysis of question types and learner misconceptions to guide strategy selection via `TeachingStrategySelector`.
+- **Synthesis & Generation**: `MasterPromptEngine` consolidates teaching steps into a single LLM call for efficiency, while `VisualGenerator` and `ResponseSynthesizer` handle structural breakdowns and ASCII/Markdown visual aids.
+- **Adaptation & Personalization**: `TemplateDifficultyAdapter` uses regex-based rules for fast difficulty adjustment, and `LearningContextManager` tracks user profiles in MongoDB to tailor content.
+- **Performance Infrastructure**: `CacheManager` implements a multi-layer caching strategy (Redis/Memory) to reduce latency, supported by `AsyncSynthesizer` for parallel execution.

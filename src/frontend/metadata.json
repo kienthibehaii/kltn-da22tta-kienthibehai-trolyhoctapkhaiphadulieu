@@ -1,0 +1,6 @@
+{
+  "name": "MinerAI",
+  "description": "Hệ thống hỗ trợ học tập và thực hành Khai phá Dữ liệu với AI Mentor và Data Lab.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

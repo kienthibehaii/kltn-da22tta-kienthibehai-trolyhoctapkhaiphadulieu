@@ -1,0 +1,3 @@
+- Protected endpoints consistently use `current_user: dict = Depends(get_current_user)` to enforce authentication and extract user identity.
+- Blocking I/O or CPU-bound RAG tasks are wrapped in `asyncio.to_thread()` to maintain non-blocking async performance.
+- Metadata filters for RAG retrieval are merged with user-specific security filters using MongoDB `$and` operators to ensure data isolation.

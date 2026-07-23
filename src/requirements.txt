@@ -1,0 +1,44 @@
+langchain==0.1.14
+langchain-core==0.1.52
+langchain-community==0.0.38
+langchain-google-genai==0.0.11
+langchain-text-splitters==0.0.1
+langchain-experimental==0.0.57
+chromadb==0.4.24
+pypdf==4.0.1
+python-pptx==0.6.21
+unstructured>=0.16.19
+streamlit==1.28.1
+python-dotenv==1.0.0
+google-generativeai==0.4.1
+pymongo==4.6.1
+rank-bm25==0.2.2
+numpy>=1.26.4
+sentence-transformers>=2.2.2
+torch>=2.0.0  # For GPU/CPU optimization
+matplotlib>=3.5.0  # For visualization
+scikit-learn>=1.0.0  # For metrics
+
+google-auth>=2.23.0  # Google OAuth2 token verification
+
+# FastAPI Backend dependencies
+fastapi>=0.104.0  # FastAPI framework
+uvicorn[standard]>=0.24.0  # ASGI server
+pydantic>=2.0.0  # Data validation
+
+# Security dependencies
+bcrypt>=4.0.0  # Password hashing
+PyJWT>=2.8.0  # JWT authentication
+cryptography>=41.0.0  # Encryption
+python-jose[cryptography]>=3.3.0  # JWT with cryptography
+
+# Multi-document dependencies (Phase 6)
+python-docx>=0.8.11  # DOCX processing
+pandas>=1.5.0  # CSV processing
+
+# Caching and Performance (Phase 2 Optimization)
+redis>=5.0.0  # Redis cache client
+
+# Document Upload features
+python-multipart>=0.0.9
+pymupdf>=1.23.0

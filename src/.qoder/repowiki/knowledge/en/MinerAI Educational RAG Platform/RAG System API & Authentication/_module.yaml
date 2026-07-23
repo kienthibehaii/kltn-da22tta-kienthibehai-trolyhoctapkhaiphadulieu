@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: backend
+title: RAG System API & Authentication
+scope:
+    - backend_api.py
+    - backend/
+source_files: []
+depends_on: []
+related_to:
+    - path: frontend

@@ -1,0 +1,37 @@
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+!frontend/.env.*.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+node_modules/
+dist/
+
+# Local vector databases and generated indexes
+chroma_db/
+chroma_db_new/
+chroma_db_new_backup/
+chroma_db_test/
+
+# Logs and local runtime files
+*.log
+logs/
+tmp/
+temp/

@@ -1,0 +1,6 @@
+- Entry point: `auth/__init__.py` exports `auth_manager`, `chat_history_manager`, and `auth_router`.
+- Core logic: `auth/auth_manager.py` implements `AuthManager` with bcrypt password hashing, HS256 JWT issuance/verification, and a dual-storage strategy (MongoDB primary, `users_local.json` fallback).
+- Chat persistence: `auth/chat_history_manager.py` implements `ChatHistoryManager` for conversation/message CRUD against MongoDB (`rag_system` database).
+- HTTP interface: `auth/api_routes.py` defines a FastAPI `APIRouter` with Pydantic models and a `get_current_user` dependency for Bearer token validation.
+- Role-based extensions: `auth/admin_routes.py` and `auth/user_routes.py` provide separate routers (`admin_router`, `user_router`) that depend on `auth.api_routes.get_current_user` and enforce role checks or ownership filters.
+- Dependency direction: route modules import managers and the auth dependency from `api_routes`; external modules import `auth_manager` and routers from the package root.

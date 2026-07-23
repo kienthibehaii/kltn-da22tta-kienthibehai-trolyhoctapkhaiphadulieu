@@ -1,0 +1,359 @@
+version: '3.8'
+
+services:
+  # ============================================================================
+  # LOAD BALANCER
+  # ============================================================================
+  nginx:
+    image: nginx:alpine
+    container_name: rag-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infrastructure/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./infrastructure/nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - api-gateway
+      - frontend
+    networks:
+      - rag-network
+    restart: always
+
+  # ============================================================================
+  # FRONTEND
+  # ============================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.production
+    container_name: rag-frontend
+    environment:
+      - NODE_ENV=production
+      - VITE_API_URL=http://api-gateway:8000
+    networks:
+      - rag-network
+    restart: always
+
+  # ============================================================================
+  # API GATEWAY
+  # ============================================================================
+  api-gateway:
+    build:
+      context: ./services/api-gateway
+      dockerfile: Dockerfile
+    container_name: rag-api-gateway
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - MONGODB_URI=mongodb://mongodb:27017/rag_db
+      - RAG_SERVICE_URL=http://rag-service:8001
+      - AUTH_SERVICE_URL=http://auth-service:8002
+    depends_on:
+      - redis
+      - mongodb
+      - rag-service
+    networks:
+      - rag-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ============================================================================
+  # RAG SERVICE
+  # ============================================================================
+  rag-service:
+    build:
+      context: ./services/rag-service
+      dockerfile: Dockerfile
+    container_name: rag-rag-service
+    ports:
+      - "8001:8001"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - MONGODB_URI=mongodb://mongodb:27017/rag_db
+      - EMBEDDING_SERVICE_URL=http://embedding-service:8011
+      - RETRIEVAL_SERVICE_URL=http://retrieval-service:8012
+      - RERANKING_SERVICE_URL=http://reranking-service:8013
+      - TRANSLATION_SERVICE_URL=http://translation-service:8014
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    depends_on:
+      - redis
+      - mongodb
+      - embedding-service
+      - retrieval-service
+      - reranking-service
+    volumes:
+      - ./chroma_db:/app/chroma_db
+    networks:
+      - rag-network
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # ============================================================================
+  # EMBEDDING SERVICE
+  # ============================================================================
+  embedding-service:
+    build:
+      context: ./services/embedding-service
+      dockerfile: Dockerfile
+    container_name: rag-embedding-service
+    ports:
+      - "8011:8011"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - MODEL_NAME=sentence-transformers/all-MiniLM-L6-v2
+      - BATCH_SIZE=32
+      - USE_GPU=false
+    depends_on:
+      - redis
+    networks:
+      - rag-network
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # ============================================================================
+  # RETRIEVAL SERVICE
+  # ============================================================================
+  retrieval-service:
+    build:
+      context: ./services/retrieval-service
+      dockerfile: Dockerfile
+    container_name: rag-retrieval-service
+    ports:
+      - "8012:8012"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - CHROMA_PATH=/app/chroma_db
+    depends_on:
+      - redis
+    volumes:
+      - ./chroma_db:/app/chroma_db
+    networks:
+      - rag-network
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+
+  # ============================================================================
+  # RERANKING SERVICE
+  # ============================================================================
+  reranking-service:
+    build:
+      context: ./services/reranking-service
+      dockerfile: Dockerfile
+    container_name: rag-reranking-service
+    ports:
+      - "8013:8013"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    depends_on:
+      - redis
+    networks:
+      - rag-network
+    restart: always
+
+  # ============================================================================
+  # TRANSLATION SERVICE
+  # ============================================================================
+  translation-service:
+    build:
+      context: ./services/translation-service
+      dockerfile: Dockerfile
+    container_name: rag-translation-service
+    ports:
+      - "8014:8014"
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    depends_on:
+      - redis
+    networks:
+      - rag-network
+    restart: always
+
+  # ============================================================================
+  # AUTH SERVICE
+  # ============================================================================
+  auth-service:
+    build:
+      context: ./services/auth-service
+      dockerfile: Dockerfile
+    container_name: rag-auth-service
+    ports:
+      - "8002:8002"
+    environment:
+      - ENVIRONMENT=production
+      - MONGODB_URI=mongodb://mongodb:27017/rag_db
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_ALGORITHM=RS256
+    depends_on:
+      - mongodb
+    networks:
+      - rag-network
+    restart: always
+
+  # ============================================================================
+  # CELERY WORKER
+  # ============================================================================
+  celery-worker:
+    build:
+      context: ./services/rag-service
+      dockerfile: Dockerfile
+    container_name: rag-celery-worker
+    command: celery -A tasks worker --loglevel=info --concurrency=4
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+      - MONGODB_URI=mongodb://mongodb:27017/rag_db
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    depends_on:
+      - redis
+      - mongodb
+    volumes:
+      - ./chroma_db:/app/chroma_db
+    networks:
+      - rag-network
+    restart: always
+    deploy:
+      replicas: 2
+
+  # ============================================================================
+  # CELERY BEAT (Scheduler)
+  # ============================================================================
+  celery-beat:
+    build:
+      context: ./services/rag-service
+      dockerfile: Dockerfile
+    container_name: rag-celery-beat
+    command: celery -A tasks beat --loglevel=info
+    environment:
+      - ENVIRONMENT=production
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - rag-network
+    restart: always
+
+  # ============================================================================
+  # REDIS
+  # ============================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: rag-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+      - ./infrastructure/redis/redis.conf:/usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+    networks:
+      - rag-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ============================================================================
+  # MONGODB
+ ata:
+ana-d:
+  graftheus-datapromedb-data:
+  
+  mongodata:edis-
+  rumes:
+vol===========================================================================VOLUMES
+# =# ======
+======================================================================ge
+
+# idver: brri:
+    dag-network
+  rks:
+networ===========================================================================TWORKS
+# =NE=
+# =======================================================================
+# ====always
+restart:   network
+        - rag-s:
+rketwo  nheus
+   - promet    _on:
+ pends
+    de/dashboardssioningrafana/provirds:/etc/gshboana/daafanitoring/gr      - ./mofana
+ib/gravar/l:/ana-datagraf- es:
+       volum   SWORD}
+PASD=${GRAFANA_ASSWORIN_PADMY_CURIT   - GF_SE   SER}
+FANA_UN_USER=${GRATY_ADMI_SECURI
+      - GFnment:    enviro1:3000"
+"300   - rts:
+     po
+  fanae: rag-gratainer_nam  contest
+  grafana:la grafana/   image: grafana:
+ 
+ =====================================================================# =======ANA
+  ==
+  # GRAF========================================================================s
+
+  # ==tart: alwayk
+    res-networ rag   -ks:
+   etwor'
+    nusthe=/promethtsdb.paage.- '--storml'
+      rometheus.ymetheus/pc/pro.file=/et'--config- nd:
+       commaus
+   the/prometheus-data:- prome      
+eus.ymlheus/promethromet.yml:/etc/pmetheustheus/proromeure/pcttruinfras     - ./lumes:
+ 
+    vo0:9090"     - "909
+  ports:metheus
+   ame: rag-proer_nin contat
+   theus:latesromerom/p    image: peus:
+=
+  prometh=====================================================================
+  # ======ROMETHEUS===
+  # P======================================================================
+  # ===tries: 3
+    ret: 10s
+  imeou      trval: 30s
+nte"]
+      i)ing'nd('pma"db.adminCom", --evalngosh", " "mo: ["CMD",st
+      telthcheck:
+    hea: always   restartwork
+ rag-net:
+      - rks  netwod.conf
+  /mongoetcod.conf:/ngodb/mongure/monfrastruct  - ./ib
+    ata/data:/db-dongod- m  mes:
+    b
+    volug_d_DATABASE=raTDB MONGO_INI}
+      -_PASSWORDORD=${MONGOROOT_PASSWITDB_O_INONG     - MNAME}
+ {MONGO_USERT_USERNAME=$ITDB_ROO- MONGO_IN    ment:
+  
+    environ017"27017:      - "27   ports:
+ngodb
+ -moragame: ontainer_n cngo:6
+   age: mo
+    imodb:==
+  mong=================================================================== # =======

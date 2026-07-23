@@ -1,0 +1,44 @@
+{
+  "user_id": "test_user",
+  "questions_asked": [
+    {
+      "timestamp": "2026-05-05T23:20:35.412499",
+      "question": "What is clustering?",
+      "answer": "Clustering is...",
+      "topics": [
+        "clustering"
+      ]
+    }
+  ],
+  "quiz_attempts": [
+    {
+      "timestamp": "2026-05-05T23:20:35.413718",
+      "topic": "Clustering",
+      "total_questions": 2,
+      "correct": 1,
+      "wrong": 1,
+      "score": 0.5,
+      "wrong_questions": [
+        {
+          "question": "Q1",
+          "user_answer": "Wrong",
+          "correct_answer": "Right",
+          "category": "clustering"
+        }
+      ]
+    }
+  ],
+  "weak_topics": {
+    "Clustering": {
+      "count": 1,
+      "total_score": 0.5,
+      "wrong_count": 1,
+      "categories": [
+        "clustering"
+      ]
+    }
+  },
+  "strong_topics": {},
+  "total_questions": 1,
+  "total_quizzes": 1
+}
